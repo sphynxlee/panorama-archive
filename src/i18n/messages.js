@@ -67,6 +67,9 @@ export const messages = {
     noMapData: "No GPS data for this photo.",
     viewPhoto: "View photo",
     language: "Language",
+    downloadPhoto: "Download full-size photo",
+    downloadingPhoto: "Preparing download…",
+    downloadFailed: "Download failed. Please try again.",
   },
   zh: {
     brandTitle: "全景典藏",
@@ -134,6 +137,9 @@ export const messages = {
     noMapData: "该照片没有 GPS 数据。",
     viewPhoto: "查看照片",
     language: "语言",
+    downloadPhoto: "下载大图（含水印）",
+    downloadingPhoto: "正在准备下载…",
+    downloadFailed: "下载失败，请重试。",
   },
 };
 

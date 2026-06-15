@@ -1,9 +1,11 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
+import { useState } from "react";
 import { usePhotos } from "../hooks/usePhotos";
 import { usePhotoText } from "../hooks/usePhotoText";
 import { useLanguage } from "../i18n/LanguageProvider";
 import { getLocalizedText } from "../i18n/messages";
 import PhotoMap from "../components/PhotoMap";
+import WatermarkedPhoto from "../components/WatermarkedPhoto";
 import {
   encodeSrc,
   formatDecimal,
@@ -12,6 +14,7 @@ import {
   googleMapsUrl,
   osmUrl,
 } from "../utils/geo";
+import { downloadWatermarkedPhoto, getWatermarkText } from "../utils/watermark";
 import "./PhotoDetailPage.css";
 
 export default function PhotoDetailPage() {
@@ -20,6 +23,7 @@ export default function PhotoDetailPage() {
   const { photos, photoById, loading, error } = usePhotos();
   const { t, locale } = useLanguage();
   const { photoTitle, photoRegion, photoRegionDesc } = usePhotoText();
+  const [downloading, setDownloading] = useState(false);
 
   const photoId = Number(id);
   const photo = photoById.get(photoId);
@@ -28,6 +32,22 @@ export default function PhotoDetailPage() {
   const next = index >= 0 && index < photos.length - 1 ? photos[index + 1] : null;
   const nearby = photo ? getNearbyPhotos(photos, photo) : [];
   const title = photo ? photoTitle(photo) : "";
+
+  async function handleDownload() {
+    if (!photo || downloading) return;
+    setDownloading(true);
+    try {
+      await downloadWatermarkedPhoto(
+        photo.src,
+        `${photo.slug}.jpg`,
+        getWatermarkText(locale)
+      );
+    } catch {
+      window.alert(t("downloadFailed"));
+    } finally {
+      setDownloading(false);
+    }
+  }
 
   if (loading) return <div className="page-state">{t("loadingPhoto")}</div>;
   if (error) return <div className="page-state error">{error || t("loadError")}</div>;
@@ -68,7 +88,11 @@ export default function PhotoDetailPage() {
 
       <div className="detail-layout">
         <section className="detail-photo-panel">
-          <img src={encodeSrc(photo.src)} alt={title} />
+          <WatermarkedPhoto
+            src={photo.src}
+            alt={title}
+            className="detail-watermarked-photo"
+          />
         </section>
 
         <aside className="detail-info-panel">
@@ -79,6 +103,15 @@ export default function PhotoDetailPage() {
             )}
             <p className="region">{photoRegion(photo)}</p>
             <p className="region-desc">{photoRegionDesc(photo)}</p>
+
+            <button
+              type="button"
+              className="download-btn"
+              onClick={handleDownload}
+              disabled={downloading}
+            >
+              {downloading ? t("downloadingPhoto") : t("downloadPhoto")}
+            </button>
 
             {photo.annotation && (
               <div className="photo-annotation">
