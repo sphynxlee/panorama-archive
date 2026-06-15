@@ -1,0 +1,95 @@
+.gallery-page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 28px 20px 56px;
+}
+
+.gallery-hero {
+  margin-bottom: 24px;
+}
+
+.gallery-hero h1 {
+  margin: 0 0 10px;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  color: #1f2d3d;
+  font-weight: 600;
+}
+
+.gallery-hero p {
+  margin: 0;
+  max-width: 720px;
+  color: #5f7082;
+  line-height: 1.6;
+}
+
+.mission-banner {
+  margin-bottom: 24px;
+  padding: 16px 18px;
+  background: linear-gradient(135deg, #eef4fb 0%, #f8fafc 100%);
+  border: 1px solid #d5e3f3;
+  border-left: 4px solid #4a7fc6;
+  border-radius: 4px;
+}
+
+.mission-banner p {
+  margin: 0 0 8px;
+  color: #425466;
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+
+.mission-banner a {
+  color: #3367d6;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.mission-banner a:hover {
+  text-decoration: underline;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.filter-bar button {
+  border: 1px solid #cfd8e3;
+  background: #fff;
+  color: #425466;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 0.84rem;
+  cursor: pointer;
+}
+
+.filter-bar button:hover {
+  border-color: #4a7fc6;
+  color: #3367d6;
+}
+
+.filter-bar button.active {
+  background: #4a7fc6;
+  border-color: #4a7fc6;
+  color: #fff;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.page-state {
+  max-width: 1280px;
+  margin: 80px auto;
+  text-align: center;
+  color: #667788;
+}
+
+.page-state.error {
+  color: #b44;
+}

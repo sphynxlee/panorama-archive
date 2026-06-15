@@ -1,0 +1,24 @@
+{
+  "name": "panorama-archive",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-photos.mjs",
+    "migrate": "node scripts/migrate-photos.mjs && npm run generate",
+    "dev": "npm run generate && vite",
+    "build": "npm run generate && vite build && cp vercel.json dist/vercel.json",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-leaflet": "^5.0.0",
+    "react-router-dom": "^7.6.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.5.2",
+    "vite": "^6.3.5"
+  }
+}

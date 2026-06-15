@@ -1,0 +1,185 @@
+.about-page {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 36px 20px 64px;
+}
+
+.about-card {
+  background: #fff;
+  border: 1px solid #d5dbe3;
+  border-radius: 8px;
+  padding: 36px 32px 40px;
+  box-shadow: 0 2px 12px rgba(35, 55, 80, 0.06);
+}
+
+.about-eyebrow {
+  margin: 0 0 10px;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #4a7fc6;
+  font-weight: 600;
+}
+
+.about-card h1 {
+  margin: 0 0 16px;
+  font-size: clamp(1.7rem, 4vw, 2.2rem);
+  line-height: 1.25;
+  color: #1f2d3d;
+}
+
+.about-lead {
+  margin: 0 0 28px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #425466;
+}
+
+.about-card section {
+  margin-bottom: 28px;
+}
+
+.about-card section h2 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  color: #1f2d3d;
+}
+
+.about-card section p {
+  margin: 0;
+  line-height: 1.75;
+  color: #5f7082;
+}
+
+.about-quote {
+  margin: 32px 0;
+  padding: 20px 22px;
+  border-left: 4px solid #4a7fc6;
+  background: #f4f8fc;
+  border-radius: 0 6px 6px 0;
+}
+
+.about-quote p {
+  margin: 0 0 10px;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: #334155;
+  font-style: italic;
+}
+
+.about-quote cite {
+  display: block;
+  font-style: normal;
+  font-size: 0.88rem;
+  color: #667788;
+}
+
+.about-portrait {
+  margin: 24px 0 0;
+  border: 1px solid #d5dbe3;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #0f1419;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-portrait-link {
+  display: block;
+  background: #0f1419;
+}
+
+.about-portrait img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: contain;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.about-portrait-link:hover img {
+  opacity: 0.92;
+}
+
+.about-portrait figcaption {
+  padding: 18px 20px 20px;
+  background: #f8fafc;
+  border-top: 1px solid #e7edf3;
+}
+
+.about-portrait-badge {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eef4fb;
+  border: 1px solid #c5d9f2;
+  color: #3367d6;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.about-portrait figcaption strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #1f2d3d;
+}
+
+.about-portrait figcaption p {
+  margin: 0 0 14px;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: #5f7082;
+}
+
+.about-portrait-cta {
+  color: #3367d6;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.about-portrait-cta:hover {
+  text-decoration: underline;
+}
+
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid #e7edf3;
+}
+
+.about-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 4px;
+  border: 1px solid #cfd8e3;
+  background: #fff;
+  color: #3367d6;
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+
+.about-btn.primary {
+  background: #4a7fc6;
+  border-color: #4a7fc6;
+  color: #fff;
+}
+
+.about-btn:hover {
+  opacity: 0.92;
+}
+
+@media (max-width: 640px) {
+  .about-card {
+    padding: 24px 20px 28px;
+  }
+
+  .about-portrait img {
+    max-height: 280px;
+  }
+}

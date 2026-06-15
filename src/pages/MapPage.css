@@ -1,0 +1,21 @@
+.map-page {
+  background: #eef2f6;
+}
+
+.map-page-header {
+  padding: 18px 20px 14px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.map-page-header h1 {
+  margin: 0 0 6px;
+  font-size: 1.35rem;
+  color: #1f2d3d;
+}
+
+.map-page-header p {
+  margin: 0;
+  color: #667788;
+  font-size: 0.92rem;
+}

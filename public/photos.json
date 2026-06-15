@@ -1,0 +1,1975 @@
+{
+  "generatedAt": "2026-06-15T19:53:42.290Z",
+  "total": 79,
+  "regions": {
+    "northern-shaanxi": {
+      "key": "northern-shaanxi",
+      "name": {
+        "en": "Northern Shaanxi & Yellow River",
+        "zh": "陕北与黄河"
+      },
+      "desc": {
+        "en": "Loess plateau, river gorges, and cave dwellings",
+        "zh": "黄土高原、河流峡谷与窑洞村落"
+      }
+    },
+    "yellow-river-shanxi": {
+      "key": "yellow-river-shanxi",
+      "name": {
+        "en": "Yellow River & Shanxi",
+        "zh": "黄河与山西"
+      },
+      "desc": {
+        "en": "Waterfalls, winter landscapes, and source rivers",
+        "zh": "瀑布、冬日风光与江河源头"
+      }
+    },
+    "western-plateau": {
+      "key": "western-plateau",
+      "name": {
+        "en": "Western Plateau",
+        "zh": "西部高原"
+      },
+      "desc": {
+        "en": "Kunlun, Pamir, and Himalayan foothills",
+        "zh": "昆仑山、帕米尔与喜马拉雅山麓"
+      }
+    },
+    "southwest-northeast": {
+      "key": "southwest-northeast",
+      "name": {
+        "en": "Southwest & Northeast",
+        "zh": "西南与东北"
+      },
+      "desc": {
+        "en": "Sichuan peaks, Yunnan temples, and snow towns",
+        "zh": "蜀山、滇寺与雪乡"
+      }
+    },
+    "yunnan-mountains": {
+      "key": "yunnan-mountains",
+      "name": {
+        "en": "Yunnan Mountains",
+        "zh": "云南雪山"
+      },
+      "desc": {
+        "en": "Sacred snow peaks and highland lakes",
+        "zh": "神圣雪山与高原湖泊"
+      }
+    },
+    "qinghai": {
+      "key": "qinghai",
+      "name": {
+        "en": "Qinghai",
+        "zh": "青海"
+      },
+      "desc": {
+        "en": "Qilian pastures, gorges, and danxia landforms",
+        "zh": "祁连牧场、峡谷与丹霞地貌"
+      }
+    }
+  },
+  "photos": [
+    {
+      "id": 1,
+      "slug": "qiankun-bay-at-sunrise",
+      "src": "photos/northern-shaanxi/qiankun-bay-at-sunrise.jpg",
+      "regionKey": "northern-shaanxi",
+      "region": {
+        "en": "Northern Shaanxi & Yellow River",
+        "zh": "陕北与黄河"
+      },
+      "regionDesc": {
+        "en": "Loess plateau, river gorges, and cave dwellings",
+        "zh": "黄土高原、河流峡谷与窑洞村落"
+      },
+      "title": {
+        "en": "Qiankun Bay at Sunrise",
+        "zh": "乾坤湾日出"
+      },
+      "coords": {
+        "lat": "36° 43' 10.64\"",
+        "lng": "110° 24' 25.57\""
+      },
+      "lat": 36.71962222222223,
+      "lng": 110.40710277777778
+    },
+    {
+      "id": 2,
+      "slug": "wanjiazhai-reservoir-in-winter",
+      "src": "photos/northern-shaanxi/wanjiazhai-reservoir-in-winter.jpg",
+      "regionKey": "northern-shaanxi",
+      "region": {
+        "en": "Northern Shaanxi & Yellow River",
+        "zh": "陕北与黄河"
+      },
+      "regionDesc": {
+        "en": "Loess plateau, river gorges, and cave dwellings",
+        "zh": "黄土高原、河流峡谷与窑洞村落"
+      },
+      "title": {
+        "en": "Wanjiazhai Reservoir in Winter",
+        "zh": "冬季的万家寨库区"
+      },
+      "coords": {
+        "lat": "39° 35' 40.48\"",
+        "lng": "111° 27' 17.73\""
+      },
+      "lat": 39.59457777777778,
+      "lng": 111.454925
+    },
+    {
+      "id": 3,
+      "slug": "laoniu-bay-on-the-yellow-river-in-winter",
+      "src": "photos/northern-shaanxi/laoniu-bay-on-the-yellow-river-in-winter.jpg",
+      "regionKey": "northern-shaanxi",
+      "region": {
+        "en": "Northern Shaanxi & Yellow River",
+        "zh": "陕北与黄河"
+      },
+      "regionDesc": {
+        "en": "Loess plateau, river gorges, and cave dwellings",
+        "zh": "黄土高原、河流峡谷与窑洞村落"
+      },
+      "title": {
+        "en": "Laoniu Bay on the Yellow River in Winter",
+        "zh": "冬季的黄河老牛湾"
+      },
+      "coords": {
+        "lat": "39° 38' 35.19\"",
+        "lng": "111° 26' 7.90\""
+      },
+      "lat": 39.64310833333333,
+      "lng": 111.43552777777778
+    },
+    {
+      "id": 4,
+      "slug": "evening-at-zhunge-er-power-plant",
+      "src": "photos/northern-shaanxi/evening-at-zhunge-er-power-plant.jpg",
+      "regionKey": "northern-shaanxi",
+      "region": {
+        "en": "Northern Shaanxi & Yellow River",
+        "zh": "陕北与黄河"
+      },
+      "regionDesc": {
+        "en": "Loess plateau, river gorges, and cave dwellings",
+        "zh": "黄土高原、河流峡谷与窑洞村落"
+      },
+      "title": {
+        "en": "Evening at Zhunge'er Power Plant",
+        "zh": "准格尔旗电厂的傍晚"
+      },
+      "coords": {
+        "lat": "39° 50' 48.96\"",
+        "lng": "111° 15' 13.00\""
+      },
+      "lat": 39.84693333333333,
+      "lng": 111.25361111111111
+    },
+    {
+      "id": 5,
+      "slug": "drying-red-dates-in-yanchuan-shaanxi",
+      "src": "photos/northern-shaanxi/drying-red-dates-in-yanchuan-shaanxi.jpg",
+      "regionKey": "northern-shaanxi",
+      "region": {
+        "en": "Northern Shaanxi & Yellow River",
+        "zh": "陕北与黄河"
+      },
+      "regionDesc": {
+        "en": "Loess plateau, river gorges, and cave dwellings",
+        "zh": "黄土高原、河流峡谷与窑洞村落"
+      },
+      "title": {
+        "en": "Drying Red Dates in Yanchuan, Shaanxi",
+        "zh": "延川延安陕西晒红枣"
+      },
+      "coords": {
+        "lat": "36° 44' 55.64\"",
+        "lng": "110° 23' 4.00\""
+      },
+      "lat": 36.74878888888889,
+      "lng": 110.38444444444445
+    },
+    {
+      "id": 6,
+      "slug": "river-bend-on-the-lower-wuding-river",
+      "src": "photos/northern-shaanxi/river-bend-on-the-lower-wuding-river.jpg",
+      "regionKey": "northern-shaanxi",
+      "region": {
+        "en": "Northern Shaanxi & Yellow River",
+        "zh": "陕北与黄河"
+      },
+      "regionDesc": {
+        "en": "Loess plateau, river gorges, and cave dwellings",
+        "zh": "黄土高原、河流峡谷与窑洞村落"
+      },
+      "title": {
+        "en": "River Bend on the Lower Wuding River",
+        "zh": "无定河下游河湾"
+      },
+      "coords": {
+        "lat": "37° 4' 43.95\"",
+        "lng": "110° 25' 8.22\""
+      },
+      "lat": 37.078875000000004,
+      "lng": 110.41895000000001
+    },
+    {
+      "id": 7,
+      "slug": "steep-cliffs-on-the-lower-wuding-river",
+      "src": "photos/northern-shaanxi/steep-cliffs-on-the-lower-wuding-river.jpg",
+      "regionKey": "northern-shaanxi",
+      "region": {
+        "en": "Northern Shaanxi & Yellow River",
+        "zh": "陕北与黄河"
+      },
+      "regionDesc": {
+        "en": "Loess plateau, river gorges, and cave dwellings",
+        "zh": "黄土高原、河流峡谷与窑洞村落"
+      },
+      "title": {
+        "en": "Steep Cliffs on the Lower Wuding River",
+        "zh": "无定河下游河道的陡壁"
+      },
+      "coords": {
+        "lat": "37° 4' 20.28\"",
+        "lng": "110° 24' 31.14\""
+      },
+      "lat": 37.072300000000006,
+      "lng": 110.40865000000001
+    },
+    {
+      "id": 8,
+      "slug": "steep-banks-of-the-lower-wuding-river",
+      "src": "photos/northern-shaanxi/steep-banks-of-the-lower-wuding-river.jpg",
+      "regionKey": "northern-shaanxi",
+      "region": {
+        "en": "Northern Shaanxi & Yellow River",
+        "zh": "陕北与黄河"
+      },
+      "regionDesc": {
+        "en": "Loess plateau, river gorges, and cave dwellings",
+        "zh": "黄土高原、河流峡谷与窑洞村落"
+      },
+      "title": {
+        "en": "Steep Banks of the Lower Wuding River",
+        "zh": "无定河下游河道陡壁"
+      },
+      "coords": {
+        "lat": "37° 4' 25.21\"",
+        "lng": "110° 24' 21.87\""
+      },
+      "lat": 37.07366944444445,
+      "lng": 110.406075
+    },
+    {
+      "id": 9,
+      "slug": "meander-landscape-on-the-lower-wuding-river",
+      "src": "photos/northern-shaanxi/meander-landscape-on-the-lower-wuding-river.jpg",
+      "regionKey": "northern-shaanxi",
+      "region": {
+        "en": "Northern Shaanxi & Yellow River",
+        "zh": "陕北与黄河"
+      },
+      "regionDesc": {
+        "en": "Loess plateau, river gorges, and cave dwellings",
+        "zh": "黄土高原、河流峡谷与窑洞村落"
+      },
+      "title": {
+        "en": "Meander Landscape on the Lower Wuding River",
+        "zh": "无定河下游蛇曲地貌"
+      },
+      "coords": {
+        "lat": "37° 4' 21.76\"",
+        "lng": "110° 25' 0.80\""
+      },
+      "lat": 37.07271111111111,
+      "lng": 110.41688888888889
+    },
+    {
+      "id": 10,
+      "slug": "layered-mountains-at-dawn",
+      "src": "photos/northern-shaanxi/layered-mountains-at-dawn.jpg",
+      "regionKey": "northern-shaanxi",
+      "region": {
+        "en": "Northern Shaanxi & Yellow River",
+        "zh": "陕北与黄河"
+      },
+      "regionDesc": {
+        "en": "Loess plateau, river gorges, and cave dwellings",
+        "zh": "黄土高原、河流峡谷与窑洞村落"
+      },
+      "title": {
+        "en": "Layered Mountains at Dawn",
+        "zh": "清晨的重山"
+      },
+      "coords": {
+        "lat": "36° 41' 55.34\"",
+        "lng": "110° 23' 11.42\""
+      },
+      "lat": 36.698705555555556,
+      "lng": 110.38650555555556
+    },
+    {
+      "id": 11,
+      "slug": "shoe-shaped-sandbar-where-qingjian-river-meets-the-yellow-river",
+      "src": "photos/northern-shaanxi/shoe-shaped-sandbar-where-qingjian-river-meets-the-yellow-river.jpg",
+      "regionKey": "northern-shaanxi",
+      "region": {
+        "en": "Northern Shaanxi & Yellow River",
+        "zh": "陕北与黄河"
+      },
+      "regionDesc": {
+        "en": "Loess plateau, river gorges, and cave dwellings",
+        "zh": "黄土高原、河流峡谷与窑洞村落"
+      },
+      "title": {
+        "en": "Shoe-Shaped Sandbar Where Qingjian River Meets the Yellow River",
+        "zh": "清涧河进入黄河沙砾形成的鞋岛"
+      },
+      "coords": {
+        "lat": "36° 43' 23.52\"",
+        "lng": "110° 24' 13.22\""
+      },
+      "lat": 36.7232,
+      "lng": 110.40367222222223
+    },
+    {
+      "id": 12,
+      "slug": "earthen-cave-dwellings-in-gaojie-village-qingjian",
+      "src": "photos/northern-shaanxi/earthen-cave-dwellings-in-gaojie-village-qingjian.jpg",
+      "regionKey": "northern-shaanxi",
+      "region": {
+        "en": "Northern Shaanxi & Yellow River",
+        "zh": "陕北与黄河"
+      },
+      "regionDesc": {
+        "en": "Loess plateau, river gorges, and cave dwellings",
+        "zh": "黄土高原、河流峡谷与窑洞村落"
+      },
+      "title": {
+        "en": "Earthen Cave Dwellings in Gaojie Village, Qingjian",
+        "zh": "陕北清涧县高杰村的土石窑洞"
+      },
+      "coords": {
+        "lat": "37° 6' 37.15\"",
+        "lng": "110° 27' 23.08\""
+      },
+      "lat": 37.11031944444444,
+      "lng": 110.45641111111111
+    },
+    {
+      "id": 13,
+      "slug": "red-dates-hanging-on-branches-in-northern-shaanxi",
+      "src": "photos/northern-shaanxi/red-dates-hanging-on-branches-in-northern-shaanxi.jpg",
+      "regionKey": "northern-shaanxi",
+      "region": {
+        "en": "Northern Shaanxi & Yellow River",
+        "zh": "陕北与黄河"
+      },
+      "regionDesc": {
+        "en": "Loess plateau, river gorges, and cave dwellings",
+        "zh": "黄土高原、河流峡谷与窑洞村落"
+      },
+      "title": {
+        "en": "Red Dates Hanging on Branches in Northern Shaanxi",
+        "zh": "陕北红枣挂枝头"
+      },
+      "coords": {
+        "lat": "37° 4' 41.48\"",
+        "lng": "110° 25' 15.63\""
+      },
+      "lat": 37.078188888888896,
+      "lng": 110.42100833333333
+    },
+    {
+      "id": 14,
+      "slug": "qingjian-river-a-tributary-of-the-yellow-river",
+      "src": "photos/northern-shaanxi/qingjian-river-a-tributary-of-the-yellow-river.jpg",
+      "regionKey": "northern-shaanxi",
+      "region": {
+        "en": "Northern Shaanxi & Yellow River",
+        "zh": "陕北与黄河"
+      },
+      "regionDesc": {
+        "en": "Loess plateau, river gorges, and cave dwellings",
+        "zh": "黄土高原、河流峡谷与窑洞村落"
+      },
+      "title": {
+        "en": "Qingjian River, a Tributary of the Yellow River",
+        "zh": "黄河支流清涧河"
+      },
+      "coords": {
+        "lat": "36° 44' 22.46\"",
+        "lng": "110° 23' 52.21\""
+      },
+      "lat": 36.73957222222222,
+      "lng": 110.39783611111112
+    },
+    {
+      "id": 15,
+      "slug": "qiankun-bay-in-the-jin-shaan-yellow-river-gorge",
+      "src": "photos/northern-shaanxi/qiankun-bay-in-the-jin-shaan-yellow-river-gorge.jpg",
+      "regionKey": "northern-shaanxi",
+      "region": {
+        "en": "Northern Shaanxi & Yellow River",
+        "zh": "陕北与黄河"
+      },
+      "regionDesc": {
+        "en": "Loess plateau, river gorges, and cave dwellings",
+        "zh": "黄土高原、河流峡谷与窑洞村落"
+      },
+      "title": {
+        "en": "Qiankun Bay in the Jin-Shaan Yellow River Gorge",
+        "zh": "黄河晋陕峡谷乾坤湾"
+      },
+      "coords": {
+        "lat": "36° 43' 19.56\"",
+        "lng": "110° 24' 23.10\""
+      },
+      "lat": 36.722100000000005,
+      "lng": 110.40641666666667,
+      "photographerPortrait": true,
+      "annotation": {
+        "en": "Among all the recovered photos, this is the only image that appears to show the photographer himself — a man standing on a cliff above the Yellow River, gazing out over Qiankun Bay. He may be Yellow River Lensman (黄河影人).",
+        "zh": "在所有找回的照片中，这是唯一一张像是摄影师本人的影像——一位男子站在黄河峡谷的崖壁上，俯瞰乾坤湾。他很可能就是「黄河影人」。"
+      }
+    },
+    {
+      "id": 16,
+      "slug": "yellow-river-channel-in-the-jin-shaan-gorge",
+      "src": "photos/northern-shaanxi/yellow-river-channel-in-the-jin-shaan-gorge.jpg",
+      "regionKey": "northern-shaanxi",
+      "region": {
+        "en": "Northern Shaanxi & Yellow River",
+        "zh": "陕北与黄河"
+      },
+      "regionDesc": {
+        "en": "Loess plateau, river gorges, and cave dwellings",
+        "zh": "黄土高原、河流峡谷与窑洞村落"
+      },
+      "title": {
+        "en": "Yellow River Channel in the Jin-Shaan Gorge",
+        "zh": "黄河晋陕峡谷河道"
+      },
+      "coords": {
+        "lat": "36° 46' 30.69\"",
+        "lng": "110° 23' 53.44\""
+      },
+      "lat": 36.775191666666665,
+      "lng": 110.39817777777779
+    },
+    {
+      "id": 17,
+      "slug": "su-ya-bay-meander-in-the-jin-shaan-yellow-river-gorge",
+      "src": "photos/northern-shaanxi/su-ya-bay-meander-in-the-jin-shaan-yellow-river-gorge.jpg",
+      "regionKey": "northern-shaanxi",
+      "region": {
+        "en": "Northern Shaanxi & Yellow River",
+        "zh": "陕北与黄河"
+      },
+      "regionDesc": {
+        "en": "Loess plateau, river gorges, and cave dwellings",
+        "zh": "黄土高原、河流峡谷与窑洞村落"
+      },
+      "title": {
+        "en": "Su'ya Bay Meander in the Jin-Shaan Yellow River Gorge",
+        "zh": "黄河晋陕峡谷蛇曲地貌的苏亚湾"
+      },
+      "coords": {
+        "lat": "36° 46' 12.87\"",
+        "lng": "110° 22' 12.09\""
+      },
+      "lat": 36.770241666666664,
+      "lng": 110.370025
+    },
+    {
+      "id": 18,
+      "slug": "approaching-geladandong",
+      "src": "photos/yellow-river-shanxi/approaching-geladandong.jpg",
+      "regionKey": "yellow-river-shanxi",
+      "region": {
+        "en": "Yellow River & Shanxi",
+        "zh": "黄河与山西"
+      },
+      "regionDesc": {
+        "en": "Waterfalls, winter landscapes, and source rivers",
+        "zh": "瀑布、冬日风光与江河源头"
+      },
+      "title": {
+        "en": "Approaching Geladandong",
+        "zh": "向格拉丹东进发"
+      },
+      "coords": {
+        "lat": "33° 42' 38.28\"",
+        "lng": "91° 19' 53.06\""
+      },
+      "lat": 33.710633333333334,
+      "lng": 91.33140555555555
+    },
+    {
+      "id": 19,
+      "slug": "winter-scene-in-luliang-mountains",
+      "src": "photos/yellow-river-shanxi/winter-scene-in-luliang-mountains.jpg",
+      "regionKey": "yellow-river-shanxi",
+      "region": {
+        "en": "Yellow River & Shanxi",
+        "zh": "黄河与山西"
+      },
+      "regionDesc": {
+        "en": "Waterfalls, winter landscapes, and source rivers",
+        "zh": "瀑布、冬日风光与江河源头"
+      },
+      "title": {
+        "en": "Winter Scene in Luliang Mountains",
+        "zh": "吕梁山冬景"
+      },
+      "coords": {
+        "lat": "36° 14' 17.45\"",
+        "lng": "110° 51' 27.16\""
+      },
+      "lat": 36.23818055555556,
+      "lng": 110.85754444444444
+    },
+    {
+      "id": 20,
+      "slug": "circular-eddy-at-hukou-waterfall",
+      "src": "photos/yellow-river-shanxi/circular-eddy-at-hukou-waterfall.jpg",
+      "regionKey": "yellow-river-shanxi",
+      "region": {
+        "en": "Yellow River & Shanxi",
+        "zh": "黄河与山西"
+      },
+      "regionDesc": {
+        "en": "Waterfalls, winter landscapes, and source rivers",
+        "zh": "瀑布、冬日风光与江河源头"
+      },
+      "title": {
+        "en": "Circular Eddy at Hukou Waterfall",
+        "zh": "壶口瀑布的圆形旋穴"
+      },
+      "coords": {
+        "lat": "36° 8' 47.29\"",
+        "lng": "110° 26' 36.90\""
+      },
+      "lat": 36.14646944444444,
+      "lng": 110.44358333333334
+    },
+    {
+      "id": 21,
+      "slug": "qarhan-salt-lake",
+      "src": "photos/yellow-river-shanxi/qarhan-salt-lake.jpg",
+      "regionKey": "yellow-river-shanxi",
+      "region": {
+        "en": "Yellow River & Shanxi",
+        "zh": "黄河与山西"
+      },
+      "regionDesc": {
+        "en": "Waterfalls, winter landscapes, and source rivers",
+        "zh": "瀑布、冬日风光与江河源头"
+      },
+      "title": {
+        "en": "Qarhan Salt Lake",
+        "zh": "察尔汗盐湖"
+      },
+      "coords": {
+        "lat": "36° 48' 30.46\"",
+        "lng": "95° 12' 54.26\""
+      },
+      "lat": 36.80846111111111,
+      "lng": 95.21507222222222
+    },
+    {
+      "id": 22,
+      "slug": "salt-crystals-at-qarhan-salt-lake",
+      "src": "photos/yellow-river-shanxi/salt-crystals-at-qarhan-salt-lake.jpg",
+      "regionKey": "yellow-river-shanxi",
+      "region": {
+        "en": "Yellow River & Shanxi",
+        "zh": "黄河与山西"
+      },
+      "regionDesc": {
+        "en": "Waterfalls, winter landscapes, and source rivers",
+        "zh": "瀑布、冬日风光与江河源头"
+      },
+      "title": {
+        "en": "Salt Crystals at Qarhan Salt Lake",
+        "zh": "察尔汗盐湖结晶"
+      },
+      "coords": {
+        "lat": "36° 49' 34.28\"",
+        "lng": "95° 12' 56.12\""
+      },
+      "lat": 36.82618888888889,
+      "lng": 95.21558888888889
+    },
+    {
+      "id": 23,
+      "slug": "salt-crystals-at-qarhan-salt-lake-2",
+      "src": "photos/yellow-river-shanxi/salt-crystals-at-qarhan-salt-lake-2.jpg",
+      "regionKey": "yellow-river-shanxi",
+      "region": {
+        "en": "Yellow River & Shanxi",
+        "zh": "黄河与山西"
+      },
+      "regionDesc": {
+        "en": "Waterfalls, winter landscapes, and source rivers",
+        "zh": "瀑布、冬日风光与江河源头"
+      },
+      "title": {
+        "en": "Salt Crystals at Qarhan Salt Lake",
+        "zh": "察尔汗盐湖结晶"
+      },
+      "coords": {
+        "lat": "36° 49' 23.39\"",
+        "lng": "95° 12' 54.88\""
+      },
+      "lat": 36.82316388888889,
+      "lng": 95.21524444444445
+    },
+    {
+      "id": 24,
+      "slug": "salt-crystals-at-qarhan-salt-lake-3",
+      "src": "photos/yellow-river-shanxi/salt-crystals-at-qarhan-salt-lake-3.jpg",
+      "regionKey": "yellow-river-shanxi",
+      "region": {
+        "en": "Yellow River & Shanxi",
+        "zh": "黄河与山西"
+      },
+      "regionDesc": {
+        "en": "Waterfalls, winter landscapes, and source rivers",
+        "zh": "瀑布、冬日风光与江河源头"
+      },
+      "title": {
+        "en": "Salt Crystals at Qarhan Salt Lake",
+        "zh": "察尔汗盐湖结晶"
+      },
+      "coords": {
+        "lat": "36° 49' 50.60\"",
+        "lng": "95° 12' 56.12\""
+      },
+      "lat": 36.83072222222223,
+      "lng": 95.21558888888889
+    },
+    {
+      "id": 25,
+      "slug": "peaks-of-the-kunlun-mountains",
+      "src": "photos/yellow-river-shanxi/peaks-of-the-kunlun-mountains.jpg",
+      "regionKey": "yellow-river-shanxi",
+      "region": {
+        "en": "Yellow River & Shanxi",
+        "zh": "黄河与山西"
+      },
+      "regionDesc": {
+        "en": "Waterfalls, winter landscapes, and source rivers",
+        "zh": "瀑布、冬日风光与江河源头"
+      },
+      "title": {
+        "en": "Peaks of the Kunlun Mountains",
+        "zh": "昆仑山群峰"
+      },
+      "coords": {
+        "lat": "35° 44' 35.40\"",
+        "lng": "94° 12' 55.14\""
+      },
+      "lat": 35.74316666666667,
+      "lng": 94.21531666666667
+    },
+    {
+      "id": 26,
+      "slug": "geladandong-snow-mountain-range",
+      "src": "photos/yellow-river-shanxi/geladandong-snow-mountain-range.jpg",
+      "regionKey": "yellow-river-shanxi",
+      "region": {
+        "en": "Yellow River & Shanxi",
+        "zh": "黄河与山西"
+      },
+      "regionDesc": {
+        "en": "Waterfalls, winter landscapes, and source rivers",
+        "zh": "瀑布、冬日风光与江河源头"
+      },
+      "title": {
+        "en": "Geladandong Snow Mountain Range",
+        "zh": "格拉丹东雪山群峰"
+      },
+      "coords": {
+        "lat": "33° 49' 4.61\"",
+        "lng": "91° 18' 38.90\""
+      },
+      "lat": 33.81794722222222,
+      "lng": 91.31080555555555
+    },
+    {
+      "id": 27,
+      "slug": "chumar-river",
+      "src": "photos/yellow-river-shanxi/chumar-river.jpg",
+      "regionKey": "yellow-river-shanxi",
+      "region": {
+        "en": "Yellow River & Shanxi",
+        "zh": "黄河与山西"
+      },
+      "regionDesc": {
+        "en": "Waterfalls, winter landscapes, and source rivers",
+        "zh": "瀑布、冬日风光与江河源头"
+      },
+      "title": {
+        "en": "Chumar River",
+        "zh": "楚玛尔河"
+      },
+      "coords": {
+        "lat": "35° 18' 32.26\"",
+        "lng": "93° 18' 6.25\""
+      },
+      "lat": 35.30896111111111,
+      "lng": 93.30173611111111
+    },
+    {
+      "id": 28,
+      "slug": "small-temple-at-the-site-of-mao-s-snow-poem",
+      "src": "photos/yellow-river-shanxi/small-temple-at-the-site-of-mao-s-snow-poem.jpg",
+      "regionKey": "yellow-river-shanxi",
+      "region": {
+        "en": "Yellow River & Shanxi",
+        "zh": "黄河与山西"
+      },
+      "regionDesc": {
+        "en": "Waterfalls, winter landscapes, and source rivers",
+        "zh": "瀑布、冬日风光与江河源头"
+      },
+      "title": {
+        "en": "Small Temple at the Site of Mao's \"Snow\" Poem",
+        "zh": "毛泽东创作《沁园春·雪》旧址的小庙"
+      },
+      "coords": {
+        "lat": "37° 6' 20.07\"",
+        "lng": "110° 27' 55.69\""
+      },
+      "lat": 37.105575,
+      "lng": 110.46546944444445
+    },
+    {
+      "id": 29,
+      "slug": "historic-site-of-mao-s-snow-poem",
+      "src": "photos/yellow-river-shanxi/historic-site-of-mao-s-snow-poem.jpg",
+      "regionKey": "yellow-river-shanxi",
+      "region": {
+        "en": "Yellow River & Shanxi",
+        "zh": "黄河与山西"
+      },
+      "regionDesc": {
+        "en": "Waterfalls, winter landscapes, and source rivers",
+        "zh": "瀑布、冬日风光与江河源头"
+      },
+      "title": {
+        "en": "Historic Site of Mao's \"Snow\" Poem",
+        "zh": "毛泽东创作《沁园春·雪》的旧址"
+      },
+      "coords": {
+        "lat": "37° 6' 11.44\"",
+        "lng": "110° 27' 56.62\""
+      },
+      "lat": 37.10317777777778,
+      "lng": 110.46572777777779
+    },
+    {
+      "id": 30,
+      "slug": "chinese-flag-flying-below-mount-everest",
+      "src": "photos/yellow-river-shanxi/chinese-flag-flying-below-mount-everest.jpg",
+      "regionKey": "yellow-river-shanxi",
+      "region": {
+        "en": "Yellow River & Shanxi",
+        "zh": "黄河与山西"
+      },
+      "regionDesc": {
+        "en": "Waterfalls, winter landscapes, and source rivers",
+        "zh": "瀑布、冬日风光与江河源头"
+      },
+      "title": {
+        "en": "Chinese Flag Flying Below Mount Everest",
+        "zh": "珠峰下飘扬的五星红旗"
+      },
+      "coords": {
+        "lat": "28° 8' 21.70\"",
+        "lng": "86° 51' 3.76\""
+      },
+      "lat": 28.13936111111111,
+      "lng": 86.85104444444444
+    },
+    {
+      "id": 31,
+      "slug": "child-of-tibet",
+      "src": "photos/yellow-river-shanxi/child-of-tibet.jpg",
+      "regionKey": "yellow-river-shanxi",
+      "region": {
+        "en": "Yellow River & Shanxi",
+        "zh": "黄河与山西"
+      },
+      "regionDesc": {
+        "en": "Waterfalls, winter landscapes, and source rivers",
+        "zh": "瀑布、冬日风光与江河源头"
+      },
+      "title": {
+        "en": "Child of Tibet",
+        "zh": "藏民之子"
+      },
+      "coords": {
+        "lat": "33° 48' 56.40\"",
+        "lng": "91° 18' 41.37\""
+      },
+      "lat": 33.815666666666665,
+      "lng": 91.31149166666667
+    },
+    {
+      "id": 32,
+      "slug": "distant-view-of-geladandong-snow-peak",
+      "src": "photos/yellow-river-shanxi/distant-view-of-geladandong-snow-peak.jpg",
+      "regionKey": "yellow-river-shanxi",
+      "region": {
+        "en": "Yellow River & Shanxi",
+        "zh": "黄河与山西"
+      },
+      "regionDesc": {
+        "en": "Waterfalls, winter landscapes, and source rivers",
+        "zh": "瀑布、冬日风光与江河源头"
+      },
+      "title": {
+        "en": "Distant View of Geladandong Snow Peak",
+        "zh": "远眺格拉丹东雪峰"
+      },
+      "coords": {
+        "lat": "33° 48' 56.40\"",
+        "lng": "91° 19' 18.45\""
+      },
+      "lat": 33.815666666666665,
+      "lng": 91.32179166666667
+    },
+    {
+      "id": 33,
+      "slug": "distant-view-of-quemo-lake",
+      "src": "photos/yellow-river-shanxi/distant-view-of-quemo-lake.jpg",
+      "regionKey": "yellow-river-shanxi",
+      "region": {
+        "en": "Yellow River & Shanxi",
+        "zh": "黄河与山西"
+      },
+      "regionDesc": {
+        "en": "Waterfalls, winter landscapes, and source rivers",
+        "zh": "瀑布、冬日风光与江河源头"
+      },
+      "title": {
+        "en": "Distant View of Quemo Lake",
+        "zh": "远眺雀莫湖"
+      },
+      "coords": {
+        "lat": "33° 51' 11.92\"",
+        "lng": "91° 20' 20.25\""
+      },
+      "lat": 33.85331111111111,
+      "lng": 91.33895833333332
+    },
+    {
+      "id": 34,
+      "slug": "qusu-river-a-source-of-the-yangtze",
+      "src": "photos/yellow-river-shanxi/qusu-river-a-source-of-the-yangtze.jpg",
+      "regionKey": "yellow-river-shanxi",
+      "region": {
+        "en": "Yellow River & Shanxi",
+        "zh": "黄河与山西"
+      },
+      "regionDesc": {
+        "en": "Waterfalls, winter landscapes, and source rivers",
+        "zh": "瀑布、冬日风光与江河源头"
+      },
+      "title": {
+        "en": "Qusu River, a Source of the Yangtze",
+        "zh": "长江源流之一切苏美"
+      },
+      "coords": {
+        "lat": "33° 39' 55.79\"",
+        "lng": "91° 5' 32.83\""
+      },
+      "lat": 33.66549722222222,
+      "lng": 91.09245277777778
+    },
+    {
+      "id": 35,
+      "slug": "quemo-lake-and-zuerkenwula-mountain",
+      "src": "photos/yellow-river-shanxi/quemo-lake-and-zuerkenwula-mountain.jpg",
+      "regionKey": "yellow-river-shanxi",
+      "region": {
+        "en": "Yellow River & Shanxi",
+        "zh": "黄河与山西"
+      },
+      "regionDesc": {
+        "en": "Waterfalls, winter landscapes, and source rivers",
+        "zh": "瀑布、冬日风光与江河源头"
+      },
+      "title": {
+        "en": "Quemo Lake and Zuerkenwula Mountain",
+        "zh": "雀莫湖与祖尔肯乌拉山"
+      },
+      "coords": {
+        "lat": "33° 50' 20.59\"",
+        "lng": "91° 19' 6.09\""
+      },
+      "lat": 33.83905277777778,
+      "lng": 91.31835833333334
+    },
+    {
+      "id": 36,
+      "slug": "red-pond-at-fenghuo-mountain",
+      "src": "photos/yellow-river-shanxi/red-pond-at-fenghuo-mountain.jpg",
+      "regionKey": "yellow-river-shanxi",
+      "region": {
+        "en": "Yellow River & Shanxi",
+        "zh": "黄河与山西"
+      },
+      "regionDesc": {
+        "en": "Waterfalls, winter landscapes, and source rivers",
+        "zh": "瀑布、冬日风光与江河源头"
+      },
+      "title": {
+        "en": "Red Pond at Fenghuo Mountain",
+        "zh": "风火山红色水塘"
+      },
+      "coords": {
+        "lat": "34° 40' 2.58\"",
+        "lng": "92° 55' 18.04\""
+      },
+      "lat": 34.66738333333333,
+      "lng": 92.92167777777779
+    },
+    {
+      "id": 37,
+      "slug": "china-snow-town",
+      "src": "photos/western-plateau/china-snow-town.jpg",
+      "regionKey": "western-plateau",
+      "region": {
+        "en": "Western Plateau",
+        "zh": "西部高原"
+      },
+      "regionDesc": {
+        "en": "Kunlun, Pamir, and Himalayan foothills",
+        "zh": "昆仑山、帕米尔与喜马拉雅山麓"
+      },
+      "title": {
+        "en": "China Snow Town",
+        "zh": "中国雪乡"
+      },
+      "coords": {
+        "lat": "44° 19' 51.49\"",
+        "lng": "128° 12' 4.25\""
+      },
+      "lat": 44.33096944444445,
+      "lng": 128.20118055555554
+    },
+    {
+      "id": 38,
+      "slug": "thousand-year-ice-cave",
+      "src": "photos/western-plateau/thousand-year-ice-cave.jpg",
+      "regionKey": "western-plateau",
+      "region": {
+        "en": "Western Plateau",
+        "zh": "西部高原"
+      },
+      "regionDesc": {
+        "en": "Kunlun, Pamir, and Himalayan foothills",
+        "zh": "昆仑山、帕米尔与喜马拉雅山麓"
+      },
+      "title": {
+        "en": "Thousand-Year Ice Cave",
+        "zh": "千年冰洞"
+      },
+      "coords": {
+        "lat": "38° 57' 13.21\"",
+        "lng": "112° 8' 54.99\""
+      },
+      "lat": 38.95366944444445,
+      "lng": 112.14860833333334
+    },
+    {
+      "id": 39,
+      "slug": "thousand-year-ice-cave-2",
+      "src": "photos/western-plateau/thousand-year-ice-cave-2.jpg",
+      "regionKey": "western-plateau",
+      "region": {
+        "en": "Western Plateau",
+        "zh": "西部高原"
+      },
+      "regionDesc": {
+        "en": "Kunlun, Pamir, and Himalayan foothills",
+        "zh": "昆仑山、帕米尔与喜马拉雅山麓"
+      },
+      "title": {
+        "en": "Thousand-Year Ice Cave",
+        "zh": "千年冰洞"
+      },
+      "coords": {
+        "lat": "38° 57' 13.69\"",
+        "lng": "112° 8' 53.14\""
+      },
+      "lat": 38.95380277777778,
+      "lng": 112.14809444444445
+    },
+    {
+      "id": 40,
+      "slug": "thousand-year-ice-cave-3",
+      "src": "photos/western-plateau/thousand-year-ice-cave-3.jpg",
+      "regionKey": "western-plateau",
+      "region": {
+        "en": "Western Plateau",
+        "zh": "西部高原"
+      },
+      "regionDesc": {
+        "en": "Kunlun, Pamir, and Himalayan foothills",
+        "zh": "昆仑山、帕米尔与喜马拉雅山麓"
+      },
+      "title": {
+        "en": "Thousand-Year Ice Cave",
+        "zh": "千年冰洞"
+      },
+      "coords": {
+        "lat": "38° 57' 14.65\"",
+        "lng": "112° 8' 51.28\""
+      },
+      "lat": 38.95406944444445,
+      "lng": 112.14757777777778
+    },
+    {
+      "id": 41,
+      "slug": "approaching-muztagh-ata",
+      "src": "photos/western-plateau/approaching-muztagh-ata.jpg",
+      "regionKey": "western-plateau",
+      "region": {
+        "en": "Western Plateau",
+        "zh": "西部高原"
+      },
+      "regionDesc": {
+        "en": "Kunlun, Pamir, and Himalayan foothills",
+        "zh": "昆仑山、帕米尔与喜马拉雅山麓"
+      },
+      "title": {
+        "en": "Approaching Muztagh Ata",
+        "zh": "向慕士塔格峰进发"
+      },
+      "coords": {
+        "lat": "38° 21' 35.87\"",
+        "lng": "75° 1' 7.56\""
+      },
+      "lat": 38.35996388888889,
+      "lng": 75.01876666666666
+    },
+    {
+      "id": 42,
+      "slug": "hukou-waterfall-at-1-600-m3-s-flow",
+      "src": "photos/western-plateau/hukou-waterfall-at-1-600-m3-s-flow.jpg",
+      "regionKey": "western-plateau",
+      "region": {
+        "en": "Western Plateau",
+        "zh": "西部高原"
+      },
+      "regionDesc": {
+        "en": "Kunlun, Pamir, and Himalayan foothills",
+        "zh": "昆仑山、帕米尔与喜马拉雅山麓"
+      },
+      "title": {
+        "en": "Hukou Waterfall at 1,600 m³/s Flow",
+        "zh": "壶口瀑布1600秒立米流量"
+      },
+      "coords": {
+        "lat": "36° 8' 51.47\"",
+        "lng": "110° 26' 39.45\""
+      },
+      "lat": 36.14763055555556,
+      "lng": 110.44429166666667
+    },
+    {
+      "id": 43,
+      "slug": "below-muztagh-ata-peak",
+      "src": "photos/western-plateau/below-muztagh-ata-peak.jpg",
+      "regionKey": "western-plateau",
+      "region": {
+        "en": "Western Plateau",
+        "zh": "西部高原"
+      },
+      "regionDesc": {
+        "en": "Kunlun, Pamir, and Himalayan foothills",
+        "zh": "昆仑山、帕米尔与喜马拉雅山麓"
+      },
+      "title": {
+        "en": "Below Muztagh Ata Peak",
+        "zh": "慕士塔格峰下"
+      },
+      "coords": {
+        "lat": "38° 21' 39.75\"",
+        "lng": "75° 0' 32.96\""
+      },
+      "lat": 38.361041666666665,
+      "lng": 75.00915555555555
+    },
+    {
+      "id": 44,
+      "slug": "yuzhu-peak-kunlun-mountains",
+      "src": "photos/western-plateau/yuzhu-peak-kunlun-mountains.jpg",
+      "regionKey": "western-plateau",
+      "region": {
+        "en": "Western Plateau",
+        "zh": "西部高原"
+      },
+      "regionDesc": {
+        "en": "Kunlun, Pamir, and Himalayan foothills",
+        "zh": "昆仑山、帕米尔与喜马拉雅山麓"
+      },
+      "title": {
+        "en": "Yuzhu Peak, Kunlun Mountains",
+        "zh": "昆仑山玉珠峰"
+      },
+      "coords": {
+        "lat": "35° 37' 46.83\"",
+        "lng": "94° 12' 8.79\""
+      },
+      "lat": 35.629675,
+      "lng": 94.20244166666667
+    },
+    {
+      "id": 45,
+      "slug": "distant-view-of-kongur-tagh-pamir-plateau",
+      "src": "photos/western-plateau/distant-view-of-kongur-tagh-pamir-plateau.jpg",
+      "regionKey": "western-plateau",
+      "region": {
+        "en": "Western Plateau",
+        "zh": "西部高原"
+      },
+      "regionDesc": {
+        "en": "Kunlun, Pamir, and Himalayan foothills",
+        "zh": "昆仑山、帕米尔与喜马拉雅山麓"
+      },
+      "title": {
+        "en": "Distant View of Kongur Tagh, Pamir Plateau",
+        "zh": "远眺公格尔山·喀什帕米尔高原"
+      },
+      "coords": {
+        "lat": "38° 16' 41.08\"",
+        "lng": "74° 55' 6.66\""
+      },
+      "lat": 38.278077777777774,
+      "lng": 74.91851666666668
+    },
+    {
+      "id": 46,
+      "slug": "aerial-view-of-namcha-barwa-range",
+      "src": "photos/western-plateau/aerial-view-of-namcha-barwa-range.jpg",
+      "regionKey": "western-plateau",
+      "region": {
+        "en": "Western Plateau",
+        "zh": "西部高原"
+      },
+      "regionDesc": {
+        "en": "Kunlun, Pamir, and Himalayan foothills",
+        "zh": "昆仑山、帕米尔与喜马拉雅山麓"
+      },
+      "title": {
+        "en": "Aerial View of Namcha Barwa Range",
+        "zh": "鸟瞰南迦巴瓦山脉"
+      },
+      "coords": {
+        "lat": "29° 33' 24.24\"",
+        "lng": "95° 7' 57.63\""
+      },
+      "lat": 29.556733333333334,
+      "lng": 95.13267499999999
+    },
+    {
+      "id": 47,
+      "slug": "wuxuhai-garze-sichuan",
+      "src": "photos/southwest-northeast/wuxuhai-garze-sichuan.jpg",
+      "regionKey": "southwest-northeast",
+      "region": {
+        "en": "Southwest & Northeast",
+        "zh": "西南与东北"
+      },
+      "regionDesc": {
+        "en": "Sichuan peaks, Yunnan temples, and snow towns",
+        "zh": "蜀山、滇寺与雪乡"
+      },
+      "title": {
+        "en": "Wuxuhai, Garze, Sichuan",
+        "zh": "五须海·四川甘孜"
+      },
+      "coords": {
+        "lat": "29° 9' 5.62\"",
+        "lng": "101° 24' 24.83\""
+      },
+      "lat": 29.15156111111111,
+      "lng": 101.40689722222223
+    },
+    {
+      "id": 48,
+      "slug": "chongsheng-temple-dali",
+      "src": "photos/southwest-northeast/chongsheng-temple-dali.jpg",
+      "regionKey": "southwest-northeast",
+      "region": {
+        "en": "Southwest & Northeast",
+        "zh": "西南与东北"
+      },
+      "regionDesc": {
+        "en": "Sichuan peaks, Yunnan temples, and snow towns",
+        "zh": "蜀山、滇寺与雪乡"
+      },
+      "title": {
+        "en": "Chongsheng Temple, Dali",
+        "zh": "大理崇圣寺"
+      },
+      "coords": {
+        "lat": "25° 42' 10.06\"",
+        "lng": "100° 8' 26.61\""
+      },
+      "lat": 25.702794444444443,
+      "lng": 100.140725
+    },
+    {
+      "id": 49,
+      "slug": "yangmaiyong-snow-mountain-garze-sichuan",
+      "src": "photos/southwest-northeast/yangmaiyong-snow-mountain-garze-sichuan.jpg",
+      "regionKey": "southwest-northeast",
+      "region": {
+        "en": "Southwest & Northeast",
+        "zh": "西南与东北"
+      },
+      "regionDesc": {
+        "en": "Sichuan peaks, Yunnan temples, and snow towns",
+        "zh": "蜀山、滇寺与雪乡"
+      },
+      "title": {
+        "en": "Yangmaiyong Snow Mountain, Garze, Sichuan",
+        "zh": "央迈勇雪山·四川甘孜"
+      },
+      "coords": {
+        "lat": "28° 23' 35.57\"",
+        "lng": "100° 22' 55.49\""
+      },
+      "lat": 28.393213888888887,
+      "lng": 100.38208055555555
+    },
+    {
+      "id": 50,
+      "slug": "wind-and-snow-pavilion-on-zheduo-mountain",
+      "src": "photos/southwest-northeast/wind-and-snow-pavilion-on-zheduo-mountain.jpg",
+      "regionKey": "southwest-northeast",
+      "region": {
+        "en": "Southwest & Northeast",
+        "zh": "西南与东北"
+      },
+      "regionDesc": {
+        "en": "Sichuan peaks, Yunnan temples, and snow towns",
+        "zh": "蜀山、滇寺与雪乡"
+      },
+      "title": {
+        "en": "Wind and Snow Pavilion on Zheduo Mountain",
+        "zh": "折多山风雪亭"
+      },
+      "coords": {
+        "lat": "30° 4' 18.36\"",
+        "lng": "101° 47' 10.57\""
+      },
+      "lat": 30.071766666666665,
+      "lng": 101.78626944444444
+    },
+    {
+      "id": 51,
+      "slug": "gazing-at-mount-gongga",
+      "src": "photos/southwest-northeast/gazing-at-mount-gongga.jpg",
+      "regionKey": "southwest-northeast",
+      "region": {
+        "en": "Southwest & Northeast",
+        "zh": "西南与东北"
+      },
+      "regionDesc": {
+        "en": "Sichuan peaks, Yunnan temples, and snow towns",
+        "zh": "蜀山、滇寺与雪乡"
+      },
+      "title": {
+        "en": "Gazing at Mount Gongga",
+        "zh": "遥望贡嘎"
+      },
+      "coords": {
+        "lat": "30° 5' 16.65\"",
+        "lng": "101° 48' 3.10\""
+      },
+      "lat": 30.087958333333333,
+      "lng": 101.8008611111111
+    },
+    {
+      "id": 52,
+      "slug": "cooking-smoke-in-snow-town",
+      "src": "photos/southwest-northeast/cooking-smoke-in-snow-town.jpg",
+      "regionKey": "southwest-northeast",
+      "region": {
+        "en": "Southwest & Northeast",
+        "zh": "西南与东北"
+      },
+      "regionDesc": {
+        "en": "Sichuan peaks, Yunnan temples, and snow towns",
+        "zh": "蜀山、滇寺与雪乡"
+      },
+      "title": {
+        "en": "Cooking Smoke in Snow Town",
+        "zh": "雪乡炊烟"
+      },
+      "coords": {
+        "lat": "44° 20' 2.77\"",
+        "lng": "128° 12' 3.63\""
+      },
+      "lat": 44.33410277777778,
+      "lng": 128.20100833333333
+    },
+    {
+      "id": 53,
+      "slug": "street-scene-in-snow-town",
+      "src": "photos/southwest-northeast/street-scene-in-snow-town.jpg",
+      "regionKey": "southwest-northeast",
+      "region": {
+        "en": "Southwest & Northeast",
+        "zh": "西南与东北"
+      },
+      "regionDesc": {
+        "en": "Sichuan peaks, Yunnan temples, and snow towns",
+        "zh": "蜀山、滇寺与雪乡"
+      },
+      "title": {
+        "en": "Street Scene in Snow Town",
+        "zh": "雪乡街景"
+      },
+      "coords": {
+        "lat": "44° 19' 51.49\"",
+        "lng": "128° 12' 4.25\""
+      },
+      "lat": 44.33096944444445,
+      "lng": 128.20118055555554
+    },
+    {
+      "id": 54,
+      "slug": "haba-snow-mountain",
+      "src": "photos/yunnan-mountains/haba-snow-mountain.jpg",
+      "regionKey": "yunnan-mountains",
+      "region": {
+        "en": "Yunnan Mountains",
+        "zh": "云南雪山"
+      },
+      "regionDesc": {
+        "en": "Sacred snow peaks and highland lakes",
+        "zh": "神圣雪山与高原湖泊"
+      },
+      "title": {
+        "en": "Haba Snow Mountain",
+        "zh": "哈巴雪山"
+      },
+      "coords": {
+        "lat": "27° 25' 9.00\"",
+        "lng": "99° 50' 59.75\""
+      },
+      "lat": 27.41916666666667,
+      "lng": 99.84993055555555
+    },
+    {
+      "id": 55,
+      "slug": "three-pagodas-of-chongsheng-temple",
+      "src": "photos/yunnan-mountains/three-pagodas-of-chongsheng-temple.jpg",
+      "regionKey": "yunnan-mountains",
+      "region": {
+        "en": "Yunnan Mountains",
+        "zh": "云南雪山"
+      },
+      "regionDesc": {
+        "en": "Sacred snow peaks and highland lakes",
+        "zh": "神圣雪山与高原湖泊"
+      },
+      "title": {
+        "en": "Three Pagodas of Chongsheng Temple",
+        "zh": "崇圣寺三塔"
+      },
+      "coords": {
+        "lat": "25° 42' 26.21\"",
+        "lng": "100° 8' 38.97\""
+      },
+      "lat": 25.707280555555556,
+      "lng": 100.14415833333334
+    },
+    {
+      "id": 56,
+      "slug": "five-finger-peak-meili-snow-mountain",
+      "src": "photos/yunnan-mountains/five-finger-peak-meili-snow-mountain.jpg",
+      "regionKey": "yunnan-mountains",
+      "region": {
+        "en": "Yunnan Mountains",
+        "zh": "云南雪山"
+      },
+      "regionDesc": {
+        "en": "Sacred snow peaks and highland lakes",
+        "zh": "神圣雪山与高原湖泊"
+      },
+      "title": {
+        "en": "Five-Finger Peak, Meili Snow Mountain",
+        "zh": "梅里雪山神女峰五指峰"
+      },
+      "coords": {
+        "lat": "28° 27' 49.90\"",
+        "lng": "98° 55' 31.30\""
+      },
+      "lat": 28.46386111111111,
+      "lng": 98.92536111111112
+    },
+    {
+      "id": 57,
+      "slug": "lugu-lake",
+      "src": "photos/yunnan-mountains/lugu-lake.jpg",
+      "regionKey": "yunnan-mountains",
+      "region": {
+        "en": "Yunnan Mountains",
+        "zh": "云南雪山"
+      },
+      "regionDesc": {
+        "en": "Sacred snow peaks and highland lakes",
+        "zh": "神圣雪山与高原湖泊"
+      },
+      "title": {
+        "en": "Lugu Lake",
+        "zh": "泸沽湖"
+      },
+      "coords": {
+        "lat": "27° 39' 46.27\"",
+        "lng": "100° 47' 24.43\""
+      },
+      "lat": 27.662852777777776,
+      "lng": 100.79011944444444
+    },
+    {
+      "id": 58,
+      "slug": "lugu-lake-2",
+      "src": "photos/yunnan-mountains/lugu-lake-2.jpg",
+      "regionKey": "yunnan-mountains",
+      "region": {
+        "en": "Yunnan Mountains",
+        "zh": "云南雪山"
+      },
+      "regionDesc": {
+        "en": "Sacred snow peaks and highland lakes",
+        "zh": "神圣雪山与高原湖泊"
+      },
+      "title": {
+        "en": "Lugu Lake",
+        "zh": "泸沽湖"
+      },
+      "coords": {
+        "lat": "27° 40' 47.57\"",
+        "lng": "100° 45' 54.82\""
+      },
+      "lat": 27.679880555555556,
+      "lng": 100.76522777777778
+    },
+    {
+      "id": 59,
+      "slug": "haizi-mountain-garze-sichuan",
+      "src": "photos/yunnan-mountains/haizi-mountain-garze-sichuan.jpg",
+      "regionKey": "yunnan-mountains",
+      "region": {
+        "en": "Yunnan Mountains",
+        "zh": "云南雪山"
+      },
+      "regionDesc": {
+        "en": "Sacred snow peaks and highland lakes",
+        "zh": "神圣雪山与高原湖泊"
+      },
+      "title": {
+        "en": "Haizi Mountain, Garze, Sichuan",
+        "zh": "海子山·四川甘孜"
+      },
+      "coords": {
+        "lat": "29° 17' 28.28\"",
+        "lng": "100° 9' 25.93\""
+      },
+      "lat": 29.29118888888889,
+      "lng": 100.15720277777778
+    },
+    {
+      "id": 60,
+      "slug": "haizi-mountain-garze-sichuan-2",
+      "src": "photos/yunnan-mountains/haizi-mountain-garze-sichuan-2.jpg",
+      "regionKey": "yunnan-mountains",
+      "region": {
+        "en": "Yunnan Mountains",
+        "zh": "云南雪山"
+      },
+      "regionDesc": {
+        "en": "Sacred snow peaks and highland lakes",
+        "zh": "神圣雪山与高原湖泊"
+      },
+      "title": {
+        "en": "Haizi Mountain, Garze, Sichuan",
+        "zh": "海子山·四川甘孜"
+      },
+      "coords": {
+        "lat": "29° 22' 40.75\"",
+        "lng": "100° 8' 8.07\""
+      },
+      "lat": 29.377986111111113,
+      "lng": 100.135575
+    },
+    {
+      "id": 61,
+      "slug": "white-pagoda-deqin-yunnan",
+      "src": "photos/yunnan-mountains/white-pagoda-deqin-yunnan.jpg",
+      "regionKey": "yunnan-mountains",
+      "region": {
+        "en": "Yunnan Mountains",
+        "zh": "云南雪山"
+      },
+      "regionDesc": {
+        "en": "Sacred snow peaks and highland lakes",
+        "zh": "神圣雪山与高原湖泊"
+      },
+      "title": {
+        "en": "White Pagoda, Deqin, Yunnan",
+        "zh": "白塔·云南德钦"
+      },
+      "coords": {
+        "lat": "28° 26' 51.77\"",
+        "lng": "98° 54' 59.48\""
+      },
+      "lat": 28.447713888888888,
+      "lng": 98.91652222222223
+    },
+    {
+      "id": 62,
+      "slug": "snow-capped-peaks-through-the-window-deqin-yunnan",
+      "src": "photos/yunnan-mountains/snow-capped-peaks-through-the-window-deqin-yunnan.jpg",
+      "regionKey": "yunnan-mountains",
+      "region": {
+        "en": "Yunnan Mountains",
+        "zh": "云南雪山"
+      },
+      "regionDesc": {
+        "en": "Sacred snow peaks and highland lakes",
+        "zh": "神圣雪山与高原湖泊"
+      },
+      "title": {
+        "en": "Snow-Capped Peaks Through the Window, Deqin, Yunnan",
+        "zh": "窗含西岭千秋雪·云南德钦"
+      },
+      "coords": {
+        "lat": "28° 26' 54.76\"",
+        "lng": "98° 54' 52.99\""
+      },
+      "lat": 28.448544444444444,
+      "lng": 98.91471944444444
+    },
+    {
+      "id": 63,
+      "slug": "napa-lake-deqin-yunnan",
+      "src": "photos/yunnan-mountains/napa-lake-deqin-yunnan.jpg",
+      "regionKey": "yunnan-mountains",
+      "region": {
+        "en": "Yunnan Mountains",
+        "zh": "云南雪山"
+      },
+      "regionDesc": {
+        "en": "Sacred snow peaks and highland lakes",
+        "zh": "神圣雪山与高原湖泊"
+      },
+      "title": {
+        "en": "Napa Lake, Deqin, Yunnan",
+        "zh": "纳帕海·云南德钦"
+      },
+      "coords": {
+        "lat": "27° 51' 58.48\"",
+        "lng": "99° 40' 5.00\""
+      },
+      "lat": 27.866244444444447,
+      "lng": 99.66805555555555
+    },
+    {
+      "id": 64,
+      "slug": "napa-lake-deqin-yunnan-2",
+      "src": "photos/yunnan-mountains/napa-lake-deqin-yunnan-2.jpg",
+      "regionKey": "yunnan-mountains",
+      "region": {
+        "en": "Yunnan Mountains",
+        "zh": "云南雪山"
+      },
+      "regionDesc": {
+        "en": "Sacred snow peaks and highland lakes",
+        "zh": "神圣雪山与高原湖泊"
+      },
+      "title": {
+        "en": "Napa Lake, Deqin, Yunnan",
+        "zh": "纳帕海·云南德钦"
+      },
+      "coords": {
+        "lat": "27° 52' 4.76\"",
+        "lng": "99° 39' 54.49\""
+      },
+      "lat": 27.86798888888889,
+      "lng": 99.66513611111111
+    },
+    {
+      "id": 65,
+      "slug": "gazing-at-mount-gongga-2",
+      "src": "photos/yunnan-mountains/gazing-at-mount-gongga-2.jpg",
+      "regionKey": "yunnan-mountains",
+      "region": {
+        "en": "Yunnan Mountains",
+        "zh": "云南雪山"
+      },
+      "regionDesc": {
+        "en": "Sacred snow peaks and highland lakes",
+        "zh": "神圣雪山与高原湖泊"
+      },
+      "title": {
+        "en": "Gazing at Mount Gongga",
+        "zh": "遥望贡嘎"
+      },
+      "coords": {
+        "lat": "30° 0' 46.52\"",
+        "lng": "100° 51' 44.60\""
+      },
+      "lat": 30.012922222222223,
+      "lng": 100.86238888888889
+    },
+    {
+      "id": 66,
+      "slug": "gazing-at-mount-gongga-3",
+      "src": "photos/yunnan-mountains/gazing-at-mount-gongga-3.jpg",
+      "regionKey": "yunnan-mountains",
+      "region": {
+        "en": "Yunnan Mountains",
+        "zh": "云南雪山"
+      },
+      "regionDesc": {
+        "en": "Sacred snow peaks and highland lakes",
+        "zh": "神圣雪山与高原湖泊"
+      },
+      "title": {
+        "en": "Gazing at Mount Gongga",
+        "zh": "遥望贡嘎"
+      },
+      "coords": {
+        "lat": "30° 2' 26.84\"",
+        "lng": "101° 24' 18.19\""
+      },
+      "lat": 30.04078888888889,
+      "lng": 101.40505277777778
+    },
+    {
+      "id": 67,
+      "slug": "heishi-city-garze-sichuan",
+      "src": "photos/yunnan-mountains/heishi-city-garze-sichuan.jpg",
+      "regionKey": "yunnan-mountains",
+      "region": {
+        "en": "Yunnan Mountains",
+        "zh": "云南雪山"
+      },
+      "regionDesc": {
+        "en": "Sacred snow peaks and highland lakes",
+        "zh": "神圣雪山与高原湖泊"
+      },
+      "title": {
+        "en": "Heishi City, Garze, Sichuan",
+        "zh": "黑石城·四川甘孜"
+      },
+      "coords": {
+        "lat": "30° 2' 9.05\"",
+        "lng": "101° 24' 3.36\""
+      },
+      "lat": 30.035847222222223,
+      "lng": 101.40093333333334
+    },
+    {
+      "id": 68,
+      "slug": "kanbula-danxia-landform",
+      "src": "photos/qinghai/kanbula-danxia-landform.jpg",
+      "regionKey": "qinghai",
+      "region": {
+        "en": "Qinghai",
+        "zh": "青海"
+      },
+      "regionDesc": {
+        "en": "Qilian pastures, gorges, and danxia landforms",
+        "zh": "祁连牧场、峡谷与丹霞地貌"
+      },
+      "title": {
+        "en": "Kanbula Danxia Landform",
+        "zh": "坎布拉丹霞"
+      },
+      "coords": {
+        "lat": "36° 6' 12.55\"",
+        "lng": "101° 44' 27.43\""
+      },
+      "lat": 36.10348611111111,
+      "lng": 101.74095277777778
+    },
+    {
+      "id": 69,
+      "slug": "kanbula-at-dawn",
+      "src": "photos/qinghai/kanbula-at-dawn.jpg",
+      "regionKey": "qinghai",
+      "region": {
+        "en": "Qinghai",
+        "zh": "青海"
+      },
+      "regionDesc": {
+        "en": "Qilian pastures, gorges, and danxia landforms",
+        "zh": "祁连牧场、峡谷与丹霞地貌"
+      },
+      "title": {
+        "en": "Kanbula at Dawn",
+        "zh": "坎布拉朝霞"
+      },
+      "coords": {
+        "lat": "36° 6' 32.52\"",
+        "lng": "101° 45' 19.34\""
+      },
+      "lat": 36.109033333333336,
+      "lng": 101.75537222222222
+    },
+    {
+      "id": 70,
+      "slug": "xiaqiong-temple",
+      "src": "photos/qinghai/xiaqiong-temple.jpg",
+      "regionKey": "qinghai",
+      "region": {
+        "en": "Qinghai",
+        "zh": "青海"
+      },
+      "regionDesc": {
+        "en": "Qilian pastures, gorges, and danxia landforms",
+        "zh": "祁连牧场、峡谷与丹霞地貌"
+      },
+      "title": {
+        "en": "Xiaqiong Temple",
+        "zh": "夏琼寺"
+      },
+      "coords": {
+        "lat": "36° 8' 56.29\"",
+        "lng": "101° 52' 30.96\""
+      },
+      "lat": 36.14896944444445,
+      "lng": 101.87526666666666
+    },
+    {
+      "id": 71,
+      "slug": "three-pagodas-of-chongsheng-temple-2",
+      "src": "photos/qinghai/three-pagodas-of-chongsheng-temple-2.jpg",
+      "regionKey": "qinghai",
+      "region": {
+        "en": "Qinghai",
+        "zh": "青海"
+      },
+      "regionDesc": {
+        "en": "Qilian pastures, gorges, and danxia landforms",
+        "zh": "祁连牧场、峡谷与丹霞地貌"
+      },
+      "title": {
+        "en": "Three Pagodas of Chongsheng Temple",
+        "zh": "崇圣寺三塔"
+      },
+      "coords": {
+        "lat": "25° 42' 31.50\"",
+        "lng": "100° 8' 50.40\""
+      },
+      "lat": 25.70875,
+      "lng": 100.14733333333334
+    },
+    {
+      "id": 72,
+      "slug": "lijiaxia-gorge",
+      "src": "photos/qinghai/lijiaxia-gorge.jpg",
+      "regionKey": "qinghai",
+      "region": {
+        "en": "Qinghai",
+        "zh": "青海"
+      },
+      "regionDesc": {
+        "en": "Qilian pastures, gorges, and danxia landforms",
+        "zh": "祁连牧场、峡谷与丹霞地貌"
+      },
+      "title": {
+        "en": "Lijiaxia Gorge",
+        "zh": "李家峡"
+      },
+      "coords": {
+        "lat": "36° 6' 44.50\"",
+        "lng": "101° 45' 15.63\""
+      },
+      "lat": 36.11236111111111,
+      "lng": 101.75434166666666
+    },
+    {
+      "id": 73,
+      "slug": "below-lijiaxia-dam",
+      "src": "photos/qinghai/below-lijiaxia-dam.jpg",
+      "regionKey": "qinghai",
+      "region": {
+        "en": "Qinghai",
+        "zh": "青海"
+      },
+      "regionDesc": {
+        "en": "Qilian pastures, gorges, and danxia landforms",
+        "zh": "祁连牧场、峡谷与丹霞地貌"
+      },
+      "title": {
+        "en": "Below Lijiaxia Dam",
+        "zh": "李家峡坝下"
+      },
+      "coords": {
+        "lat": "36° 3' 24.74\"",
+        "lng": "101° 53' 33.72\""
+      },
+      "lat": 36.05687222222222,
+      "lng": 101.8927
+    },
+    {
+      "id": 74,
+      "slug": "below-lijiaxia-dam-2",
+      "src": "photos/qinghai/below-lijiaxia-dam-2.jpg",
+      "regionKey": "qinghai",
+      "region": {
+        "en": "Qinghai",
+        "zh": "青海"
+      },
+      "regionDesc": {
+        "en": "Qilian pastures, gorges, and danxia landforms",
+        "zh": "祁连牧场、峡谷与丹霞地貌"
+      },
+      "title": {
+        "en": "Below Lijiaxia Dam",
+        "zh": "李家峡坝下"
+      },
+      "coords": {
+        "lat": "36° 4' 5.70\"",
+        "lng": "101° 53' 12.71\""
+      },
+      "lat": 36.068250000000006,
+      "lng": 101.8868638888889
+    },
+    {
+      "id": 75,
+      "slug": "qilian-pasture",
+      "src": "photos/qinghai/qilian-pasture.jpg",
+      "regionKey": "qinghai",
+      "region": {
+        "en": "Qinghai",
+        "zh": "青海"
+      },
+      "regionDesc": {
+        "en": "Qilian pastures, gorges, and danxia landforms",
+        "zh": "祁连牧场、峡谷与丹霞地貌"
+      },
+      "title": {
+        "en": "Qilian Pasture",
+        "zh": "祁连牧场"
+      },
+      "coords": {
+        "lat": "38° 11' 40.38\"",
+        "lng": "99° 47' 19.13\""
+      },
+      "lat": 38.19455,
+      "lng": 99.78864722222222
+    },
+    {
+      "id": 76,
+      "slug": "qilian-pasture-2",
+      "src": "photos/qinghai/qilian-pasture-2.jpg",
+      "regionKey": "qinghai",
+      "region": {
+        "en": "Qinghai",
+        "zh": "青海"
+      },
+      "regionDesc": {
+        "en": "Qilian pastures, gorges, and danxia landforms",
+        "zh": "祁连牧场、峡谷与丹霞地貌"
+      },
+      "title": {
+        "en": "Qilian Pasture",
+        "zh": "祁连牧场"
+      },
+      "coords": {
+        "lat": "38° 46' 44.32\"",
+        "lng": "99° 29' 51.65\""
+      },
+      "lat": 38.778977777777776,
+      "lng": 99.49768055555556
+    },
+    {
+      "id": 77,
+      "slug": "qilian-pasture-3",
+      "src": "photos/qinghai/qilian-pasture-3.jpg",
+      "regionKey": "qinghai",
+      "region": {
+        "en": "Qinghai",
+        "zh": "青海"
+      },
+      "regionDesc": {
+        "en": "Qilian pastures, gorges, and danxia landforms",
+        "zh": "祁连牧场、峡谷与丹霞地貌"
+      },
+      "title": {
+        "en": "Qilian Pasture",
+        "zh": "祁连牧场"
+      },
+      "coords": {
+        "lat": "38° 47' 30.57\"",
+        "lng": "99° 1' 18.61\""
+      },
+      "lat": 38.791824999999996,
+      "lng": 99.02183611111111
+    },
+    {
+      "id": 78,
+      "slug": "upper-reaches-of-the-heihe-river-qilian",
+      "src": "photos/qinghai/upper-reaches-of-the-heihe-river-qilian.jpg",
+      "regionKey": "qinghai",
+      "region": {
+        "en": "Qinghai",
+        "zh": "青海"
+      },
+      "regionDesc": {
+        "en": "Qilian pastures, gorges, and danxia landforms",
+        "zh": "祁连牧场、峡谷与丹霞地貌"
+      },
+      "title": {
+        "en": "Upper Reaches of the Heihe River, Qilian",
+        "zh": "祁连黑河上游"
+      },
+      "coords": {
+        "lat": "38° 27' 57.44\"",
+        "lng": "99° 32' 7.61\""
+      },
+      "lat": 38.46595555555556,
+      "lng": 99.53544722222222
+    },
+    {
+      "id": 79,
+      "slug": "sunset-on-the-upper-heihe-river-qilian",
+      "src": "photos/qinghai/sunset-on-the-upper-heihe-river-qilian.jpg",
+      "regionKey": "qinghai",
+      "region": {
+        "en": "Qinghai",
+        "zh": "青海"
+      },
+      "regionDesc": {
+        "en": "Qilian pastures, gorges, and danxia landforms",
+        "zh": "祁连牧场、峡谷与丹霞地貌"
+      },
+      "title": {
+        "en": "Sunset on the Upper Heihe River, Qilian",
+        "zh": "祁连黑河上游晚霞"
+      },
+      "coords": {
+        "lat": "38° 25' 34.18\"",
+        "lng": "99° 34' 55.70\""
+      },
+      "lat": 38.42616111111111,
+      "lng": 99.58213888888889
+    }
+  ]
+}

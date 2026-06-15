@@ -1,0 +1,47 @@
+.photo-card {
+  display: block;
+  background: #fff;
+  border: 1px solid #dde3ea;
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.photo-card:hover {
+  box-shadow: 0 6px 18px rgba(35, 55, 80, 0.12);
+  transform: translateY(-2px);
+}
+
+.photo-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  background: #e9eef3;
+}
+
+.photo-card-body {
+  padding: 12px 14px 14px;
+}
+
+.photo-card-body h3 {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  color: #1f2d3d;
+}
+
+.photo-card-body p {
+  margin: 0 0 6px;
+  font-size: 0.82rem;
+  color: #667788;
+}
+
+.photo-card-body .coords {
+  display: block;
+  font-size: 0.75rem;
+  color: #8899aa;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
