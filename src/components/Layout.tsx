@@ -2,6 +2,7 @@ import { Link, NavLink, Outlet, useNavigate } from "react-router-dom";
 import type { FormEvent } from "react";
 import { usePhotos } from "../hooks/usePhotos";
 import { useLanguage } from "../i18n/LanguageProvider";
+import BrandMark from "./BrandMark";
 import "./Layout.css";
 
 export default function Layout() {
@@ -21,7 +22,7 @@ export default function Layout() {
       <header className="topbar">
         <div className="topbar-inner">
           <Link to="/" className="brand">
-            <span className="brand-mark">◉</span>
+            <BrandMark className="brand-mark" />
             <span className="brand-text">
               <strong>{t("brandTitle")}</strong>
               <small>{t("brandSubtitle")}</small>

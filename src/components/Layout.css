@@ -26,8 +26,9 @@
 }
 
 .brand-mark {
-  font-size: 1.4rem;
-  line-height: 1;
+  width: 1.45rem;
+  height: 1.45rem;
+  flex-shrink: 0;
 }
 
 .brand-text {
