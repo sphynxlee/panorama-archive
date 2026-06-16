@@ -19,3 +19,23 @@
   color: #667788;
   font-size: 0.92rem;
 }
+
+.map-page-canvas {
+  height: calc(100vh - 56px - 88px);
+  min-height: 360px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px 20px;
+}
+
+@media (max-width: 768px) {
+  .map-page-canvas {
+    height: calc(100dvh - 220px);
+    min-height: 280px;
+    padding: 0 14px 16px;
+  }
+
+  .map-page-header {
+    padding: 16px 14px 12px;
+  }
+}

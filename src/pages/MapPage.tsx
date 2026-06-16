@@ -16,13 +16,15 @@ export default function MapPage() {
         <h1>{t("mapTitle")}</h1>
         <p>{t("mapDesc")}</p>
       </div>
-      <PhotoMap
-        photos={mappable}
-        height="calc(100vh - 56px - 88px)"
-        showPopups
-        useThumbnails
-        zoom={5}
-      />
+      <div className="map-page-canvas">
+        <PhotoMap
+          photos={mappable}
+          height="100%"
+          showPopups
+          useThumbnails
+          zoom={5}
+        />
+      </div>
     </main>
   );
 }

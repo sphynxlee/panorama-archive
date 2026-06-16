@@ -69,3 +69,17 @@
 .featured-card:hover img {
   opacity: 0.95;
 }
+
+@media (max-width: 640px) {
+  .featured-section {
+    margin-bottom: 24px;
+  }
+
+  .featured-card img {
+    max-height: 280px;
+  }
+
+  .featured-overlay {
+    padding: 16px;
+  }
+}

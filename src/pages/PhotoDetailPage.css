@@ -282,4 +282,8 @@
   .detail-nav {
     justify-content: space-between;
   }
+
+  .detail-watermarked-photo img {
+    max-height: min(70vh, 520px);
+  }
 }

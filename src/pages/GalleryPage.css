@@ -133,8 +133,34 @@
 
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
   gap: 18px;
+}
+
+@media (max-width: 640px) {
+  .gallery-page {
+    padding: 20px 14px 40px;
+  }
+
+  .gallery-hero h1 {
+    font-size: 1.45rem;
+  }
+
+  .mission-banner {
+    padding: 14px;
+  }
+
+  .photo-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .filter-bar button,
+  .filter-link,
+  .filter-label {
+    font-size: 0.78rem;
+    padding: 6px 11px;
+  }
 }
 
 .page-state {

@@ -9,10 +9,10 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
-  height: 56px;
+  min-height: 56px;
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
 }
 
 .brand {
@@ -21,7 +21,8 @@
   gap: 10px;
   color: inherit;
   text-decoration: none;
-  min-width: 160px;
+  flex-shrink: 0;
+  min-width: 0;
 }
 
 .brand-mark {
@@ -47,14 +48,16 @@
 .nav-links {
   display: flex;
   gap: 4px;
+  flex-shrink: 0;
 }
 
 .nav-links a {
   color: rgba(255, 255, 255, 0.92);
   text-decoration: none;
-  padding: 8px 14px;
+  padding: 8px 12px;
   border-radius: 4px;
   font-size: 0.92rem;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -67,7 +70,8 @@
 }
 
 .topbar-search {
-  flex: 1;
+  flex: 1 1 180px;
+  min-width: 0;
   max-width: 280px;
 }
 
@@ -102,6 +106,67 @@
   display: flex;
   align-items: center;
   gap: 14px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .topbar-meta {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .topbar-inner {
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding: 10px 14px 12px;
+    gap: 10px;
+  }
+
+  .brand {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .brand-text small {
+    display: none;
+  }
+
+  .topbar-actions {
+    margin-left: 0;
+  }
+
+  .topbar-search {
+    order: 3;
+    flex: 1 1 100%;
+    max-width: none;
+    width: 100%;
+  }
+
+  .nav-links {
+    order: 4;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+
+  .nav-links a {
+    text-align: center;
+    padding: 10px 8px;
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery-page,
+  .map-page-header,
+  .detail-toolbar,
+  .detail-layout,
+  .nearby-section {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
 }
 
 .lang-switch {
@@ -123,16 +188,6 @@
 .lang-switch button.active {
   background: rgba(255, 255, 255, 0.22);
   font-weight: 600;
-}
-
-@media (max-width: 640px) {
-  .topbar-meta {
-    display: none;
-  }
-
-  .topbar-search {
-    display: none;
-  }
 }
 
 .site-footer {
