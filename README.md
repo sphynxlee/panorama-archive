@@ -104,6 +104,29 @@ This project follows [Semantic Versioning](https://semver.org/):
 
 Current version: see `package.json`.
 
+### Release commands
+
+| Command | When to use | Example |
+|---------|-------------|---------|
+| `npm run release:patch` | Bug fixes | `1.2.0` → `1.2.1` |
+| `npm run release:minor` | New features | `1.2.0` → `1.3.0` |
+| `npm run release:major` | Breaking changes | `1.2.0` → `2.0.0` |
+
+Each `release:*` command runs `npm run build`, bumps `package.json`, creates a git commit, and tags `vX.Y.Z`.
+
+```bash
+# 1. Commit your feature/fixes first (working tree must be clean)
+git add -A && git commit -m "feat: your change"
+
+# 2. Bump version + tag
+npm run release:minor
+
+# 3. Push to GitHub (Vercel auto-deploys)
+npm run release:push
+```
+
+To bump the version number only (no commit/tag): `npm run version:patch|minor|major`.
+
 ---
 
 ## Credits

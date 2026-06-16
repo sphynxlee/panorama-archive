@@ -11,9 +11,14 @@
     "build": "npm run generate && tsc -p tsconfig.app.json --noEmit && vite build && cp vercel.json dist/vercel.json",
     "preview": "vite preview",
     "typecheck": "tsc -p tsconfig.app.json --noEmit",
+    "preversion": "npm run build",
     "version:patch": "npm version patch --no-git-tag-version",
     "version:minor": "npm version minor --no-git-tag-version",
-    "version:major": "npm version major --no-git-tag-version"
+    "version:major": "npm version major --no-git-tag-version",
+    "release:patch": "npm version patch -m \"Release v%s\"",
+    "release:minor": "npm version minor -m \"Release v%s\"",
+    "release:major": "npm version major -m \"Release v%s\"",
+    "release:push": "git push origin main --follow-tags"
   },
   "dependencies": {
     "leaflet": "^1.9.4",
