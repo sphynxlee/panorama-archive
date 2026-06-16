@@ -7,6 +7,8 @@ import { getLocalizedText } from "../i18n/messages";
 import PhotoMap from "../components/PhotoMap";
 import WatermarkedPhoto from "../components/WatermarkedPhoto";
 import { PhotoSourceLine } from "../components/SourceBadge";
+import PageShell from "../components/PageShell";
+import { useScrollToTopWhenReady } from "../hooks/useScrollToTopWhenReady";
 import {
   encodeSrc,
   formatDecimal,
@@ -34,6 +36,8 @@ export default function PhotoDetailPage() {
   const nearby = photo ? getNearbyPhotos(photos, photo) : [];
   const title = photo ? photoTitle(photo) : "";
 
+  useScrollToTopWhenReady(!loading);
+
   async function handleDownload() {
     if (!photo || downloading) return;
     setDownloading(true);
@@ -50,22 +54,34 @@ export default function PhotoDetailPage() {
     }
   }
 
-  if (loading) return <div className="page-state">{t("loadingPhoto")}</div>;
-  if (error) return <div className="page-state error">{error || t("loadError")}</div>;
+  if (loading) {
+    return (
+      <PageShell>
+        <div className="page-state">{t("loadingPhoto")}</div>
+      </PageShell>
+    );
+  }
+  if (error) {
+    return (
+      <PageShell>
+        <div className="page-state error">{error || t("loadError")}</div>
+      </PageShell>
+    );
+  }
 
   if (!photo) {
     return (
-      <main className="detail-page">
-        <div className="detail-not-found">
+      <PageShell>
+        <div className="page-state">
           <h1>{t("photoNotFound")}</h1>
           <Link to="/">{t("backToGallery")}</Link>
         </div>
-      </main>
+      </PageShell>
     );
   }
 
   return (
-    <main className="detail-page">
+    <PageShell cardClassName="detail-page-card">
       <div className="detail-toolbar">
         <button type="button" onClick={() => navigate(-1)}>
           {t("back")}
@@ -187,6 +203,6 @@ export default function PhotoDetailPage() {
           </div>
         </section>
       )}
-    </main>
+    </PageShell>
   );
 }

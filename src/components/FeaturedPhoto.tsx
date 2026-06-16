@@ -1,33 +1,57 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import type { Photo } from "../types";
 import { usePhotoText } from "../hooks/usePhotoText";
 import { useLanguage } from "../i18n/LanguageProvider";
 import { encodeSrc, formatDms } from "../utils/geo";
+import { getFeaturedPhoto, pickRandomFeaturedPhoto } from "../utils/photos";
 import SourceBadge from "./SourceBadge";
 import "./FeaturedPhoto.css";
 
 type FeaturedPhotoProps = {
-  photo: Photo | null;
+  photos: Photo[];
 };
 
-export default function FeaturedPhoto({ photo }: FeaturedPhotoProps) {
+export default function FeaturedPhoto({ photos }: FeaturedPhotoProps) {
   const { t, locale } = useLanguage();
   const { photoTitle, photoRegion } = usePhotoText();
-  if (!photo) return null;
+  const [featured, setFeatured] = useState<Photo | null>(() => getFeaturedPhoto(photos));
 
-  const title = photoTitle(photo);
+  useEffect(() => {
+    setFeatured(getFeaturedPhoto(photos));
+  }, [photos]);
+
+  if (!featured) return null;
+
+  const title = photoTitle(featured);
+
+  function handleShuffle() {
+    setFeatured((current) => pickRandomFeaturedPhoto(photos, current));
+  }
 
   return (
     <section className="featured-section">
-      <h2>{t("featuredTitle")}</h2>
-      <Link to={`/photo/${photo.id}`} className="featured-card">
-        <img src={encodeSrc(photo.src)} alt={title} loading="eager" />
-        <SourceBadge source={photo.source ?? "official"} />
+      <div className="featured-header">
+        <h2>{t("featuredTitle")}</h2>
+        <button
+          type="button"
+          className="featured-shuffle"
+          onClick={handleShuffle}
+          disabled={photos.length <= 1}
+          aria-label={t("featuredShuffle")}
+        >
+          {t("featuredShuffle")}
+        </button>
+      </div>
+
+      <Link to={`/photo/${featured.id}`} className="featured-card">
+        <img src={encodeSrc(featured.src)} alt={title} loading="eager" />
+        <SourceBadge source={featured.source ?? "official"} />
         <div className="featured-overlay">
           <strong>{title}</strong>
-          <span>{photoRegion(photo)}</span>
-          {photo.coords && (
-            <span className="featured-coords">{formatDms(photo.coords, locale)}</span>
+          <span>{photoRegion(featured)}</span>
+          {featured.coords && (
+            <span className="featured-coords">{formatDms(featured.coords, locale)}</span>
           )}
           <em>{t("featuredCta")}</em>
         </div>

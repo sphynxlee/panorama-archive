@@ -160,11 +160,7 @@
 }
 
 @media (max-width: 640px) {
-  .gallery-page,
-  .map-page-header,
-  .detail-toolbar,
-  .detail-layout,
-  .nearby-section {
+  .gallery-page {
     padding-left: 14px;
     padding-right: 14px;
   }

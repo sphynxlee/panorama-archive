@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { PhotosProvider } from "./hooks/usePhotos";
 import { LanguageProvider } from "./i18n/LanguageProvider";
+import ScrollToTop from "./components/ScrollToTop";
 import Layout from "./components/Layout";
 import GalleryPage from "./pages/GalleryPage";
 import MapPage from "./pages/MapPage";
@@ -14,6 +15,7 @@ export default function App() {
     <LanguageProvider>
       <PhotosProvider>
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route element={<Layout />}>
               <Route index element={<GalleryPage />} />

@@ -1,13 +1,20 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useSearchParams } from "react-router-dom";
 import { useMemo } from "react";
 import { usePhotos } from "../hooks/usePhotos";
 import { usePhotoText } from "../hooks/usePhotoText";
 import { useLanguage } from "../i18n/LanguageProvider";
 import PhotoCard from "../components/PhotoCard";
+import Pagination from "../components/Pagination";
+import PageShell from "../components/PageShell";
+import { useScrollToTopWhenReady } from "../hooks/useScrollToTopWhenReady";
+import { paginate, parsePageParam } from "../utils/pagination";
 import "./GalleryPage.css";
 
 export default function RegionPage() {
   const { key } = useParams<{ key: string }>();
+  const [searchParams] = useSearchParams();
+  const page = parsePageParam(searchParams.get("page"));
+
   const { photos, regions, loading, error } = usePhotos();
   const { t } = useLanguage();
   const { regionName, regionDesc } = usePhotoText();
@@ -19,22 +26,40 @@ export default function RegionPage() {
     [photos, key]
   );
 
-  if (loading) return <div className="page-state">{t("loadingPhotos")}</div>;
-  if (error) return <div className="page-state error">{error || t("loadError")}</div>;
+  const paged = useMemo(() => paginate(filtered, page), [filtered, page]);
+
+  useScrollToTopWhenReady(!loading);
+
+  if (loading) {
+    return (
+      <PageShell>
+        <div className="page-state">{t("loadingPhotos")}</div>
+      </PageShell>
+    );
+  }
+  if (error) {
+    return (
+      <PageShell>
+        <div className="page-state error">{error || t("loadError")}</div>
+      </PageShell>
+    );
+  }
 
   if (!region) {
     return (
-      <main className="gallery-page">
+      <PageShell>
         <div className="page-state">
           <h1>{t("photoNotFound")}</h1>
           <Link to="/">{t("backToGallery")}</Link>
         </div>
-      </main>
+      </PageShell>
     );
   }
 
+  const basePath = `/region/${key}`;
+
   return (
-    <main className="gallery-page">
+    <PageShell>
       <section className="gallery-hero">
         <p className="region-eyebrow">{t("regionBrowse")}</p>
         <h1>{regionName(region)}</h1>
@@ -43,14 +68,16 @@ export default function RegionPage() {
       </section>
 
       <div className="photo-grid">
-        {filtered.map((photo) => (
+        {paged.items.map((photo) => (
           <PhotoCard key={photo.id} photo={photo} />
         ))}
       </div>
 
+      <Pagination basePath={basePath} page={paged.page} totalPages={paged.totalPages} />
+
       <p className="search-back">
         <Link to="/">{t("backToGallery")}</Link>
       </p>
-    </main>
+    </PageShell>
   );
 }

@@ -1,41 +1,27 @@
-.map-page {
-  background: #eef2f6;
-}
-
-.map-page-header {
-  padding: 18px 20px 14px;
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.map-page-header h1 {
-  margin: 0 0 6px;
-  font-size: 1.35rem;
-  color: #1f2d3d;
-}
-
-.map-page-header p {
-  margin: 0;
-  color: #667788;
-  font-size: 0.92rem;
+.map-page-frame {
+  border: 1px solid #d5dbe3;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(35, 55, 80, 0.06);
+  overflow: hidden;
 }
 
 .map-page-canvas {
-  height: calc(100vh - 56px - 88px);
   min-height: 360px;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 20px 20px;
+  height: clamp(400px, 62vh, 720px);
 }
 
-@media (max-width: 768px) {
-  .map-page-canvas {
-    height: calc(100dvh - 220px);
-    min-height: 280px;
-    padding: 0 14px 16px;
+.map-page-frame .photo-map {
+  border: none;
+  border-radius: 0;
+}
+
+@media (max-width: 640px) {
+  .map-page-frame {
+    border-radius: 6px;
   }
 
-  .map-page-header {
-    padding: 16px 14px 12px;
+  .map-page-canvas {
+    min-height: 280px;
+    height: clamp(320px, 50vh, 480px);
   }
 }

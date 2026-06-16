@@ -1,16 +1,13 @@
-.detail-page {
-  background: #eef2f6;
-  min-height: calc(100vh - 56px);
+.detail-page-card {
+  padding-top: 20px;
 }
 
 .detail-toolbar {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 14px 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 12px;
+  margin-bottom: 16px;
 }
 
 .detail-toolbar button,
@@ -37,9 +34,6 @@
 }
 
 .detail-layout {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 16px 20px 32px;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 340px;
   gap: 18px;
@@ -55,7 +49,7 @@
 }
 
 .detail-watermarked-photo img {
-  max-height: calc(100vh - 180px);
+  max-height: calc(100vh - 220px);
   object-fit: contain;
   background: #0f1419;
 }
@@ -90,11 +84,7 @@
 }
 
 .info-card {
-  background: #fff;
-  border: 1px solid #d5dbe3;
-  border-radius: 4px;
-  padding: 18px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  padding: 4px 0 0;
 }
 
 .info-card h1 {
@@ -210,9 +200,9 @@
 }
 
 .nearby-section {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 20px 40px;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid #e7edf3;
 }
 
 .nearby-grid {
@@ -224,7 +214,7 @@
 .nearby-card {
   display: flex;
   gap: 10px;
-  background: #fff;
+  background: #f8fafc;
   border: 1px solid #d5dbe3;
   border-radius: 4px;
   padding: 8px;
@@ -234,6 +224,7 @@
 
 .nearby-card:hover {
   border-color: #4a7fc6;
+  background: #fff;
 }
 
 .nearby-card img {
@@ -255,12 +246,6 @@
 .nearby-card span {
   font-size: 0.78rem;
   color: #667788;
-}
-
-.detail-not-found {
-  max-width: 640px;
-  margin: 80px auto;
-  text-align: center;
 }
 
 @media (max-width: 960px) {

@@ -4,6 +4,8 @@ import { usePhotos } from "../hooks/usePhotos";
 import { usePhotoText } from "../hooks/usePhotoText";
 import { useLanguage } from "../i18n/LanguageProvider";
 import PhotoCard from "../components/PhotoCard";
+import PageShell from "../components/PageShell";
+import { useScrollToTopWhenReady } from "../hooks/useScrollToTopWhenReady";
 import { searchPhotos } from "../utils/photos";
 import "./GalleryPage.css";
 
@@ -19,11 +21,25 @@ export default function SearchPage() {
     [photos, query, photoTitle, photoRegion]
   );
 
-  if (loading) return <div className="page-state">{t("loadingPhotos")}</div>;
-  if (error) return <div className="page-state error">{error || t("loadError")}</div>;
+  useScrollToTopWhenReady(!loading);
+
+  if (loading) {
+    return (
+      <PageShell>
+        <div className="page-state">{t("loadingPhotos")}</div>
+      </PageShell>
+    );
+  }
+  if (error) {
+    return (
+      <PageShell>
+        <div className="page-state error">{error || t("loadError")}</div>
+      </PageShell>
+    );
+  }
 
   return (
-    <main className="gallery-page">
+    <PageShell>
       <section className="gallery-hero">
         <h1>{t("searchTitle")}</h1>
         {!query.trim() ? (
@@ -46,6 +62,6 @@ export default function SearchPage() {
       <p className="search-back">
         <Link to="/">{t("backToGallery")}</Link>
       </p>
-    </main>
+    </PageShell>
   );
 }

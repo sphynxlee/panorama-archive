@@ -4,6 +4,7 @@ import { usePhotoText } from "../hooks/usePhotoText";
 import { useLanguage } from "../i18n/LanguageProvider";
 import { getLocalizedText } from "../i18n/messages";
 import { encodeSrc } from "../utils/geo";
+import PageShell from "../components/PageShell";
 import "./AboutPage.css";
 
 const PORTRAIT_PHOTO_ID = 15;
@@ -15,12 +16,14 @@ export default function AboutPage() {
   const portrait = photoById.get(PORTRAIT_PHOTO_ID);
 
   return (
-    <main className="about-page">
-      <article className="about-card">
-        <p className="about-eyebrow">{t("aboutEyebrow")}</p>
+    <PageShell className="about-page">
+      <section className="gallery-hero">
+        <p className="region-eyebrow">{t("aboutEyebrow")}</p>
         <h1>{t("aboutTitle")}</h1>
-        <p className="about-lead">{t("aboutLead")}</p>
+        <p>{t("aboutLead")}</p>
+      </section>
 
+      <article className="about-body">
         <section>
           <h2>{t("aboutSection1Title")}</h2>
           <p>{t("aboutSection1Body")}</p>
@@ -77,6 +80,6 @@ export default function AboutPage() {
           </Link>
         </div>
       </article>
-    </main>
+    </PageShell>
   );
 }

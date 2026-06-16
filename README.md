@@ -98,7 +98,8 @@ This project follows [Semantic Versioning](https://semver.org/):
 |---------|-----------|
 | **1.0.0** | Phase 1 — initial gallery, map, about, watermark, bilingual UI |
 | **1.1.0** | Phase 2 — TypeScript, featured photo, search, region pages, archive badges |
-| **1.2.0** | Phase 3 (planned) — Supabase CDN, images out of Git |
+| **1.2.0** | Home region previews, pagination, page cards, map controls, scroll & layout polish |
+| **1.3.0** | Phase 3 (planned) — Supabase CDN, images out of Git |
 | **2.0.0** | Phase 4+ (planned) — accounts, invites, uploads, moderation |
 
 Current version: see `package.json`.
