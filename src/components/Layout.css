@@ -66,6 +66,31 @@
   font-weight: 600;
 }
 
+.topbar-search {
+  flex: 1;
+  max-width: 280px;
+}
+
+.topbar-search input {
+  width: 100%;
+  padding: 7px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 0.86rem;
+}
+
+.topbar-search input::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.topbar-search input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
 .topbar-meta {
   font-size: 0.82rem;
   opacity: 0.9;
@@ -102,6 +127,10 @@
 
 @media (max-width: 640px) {
   .topbar-meta {
+    display: none;
+  }
+
+  .topbar-search {
     display: none;
   }
 }

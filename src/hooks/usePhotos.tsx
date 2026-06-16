@@ -1,20 +1,38 @@
-import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+  type ReactNode,
+} from "react";
+import type { Photo, PhotosData, Region } from "../types";
 
-const PhotosContext = createContext(null);
+type PhotosContextValue = {
+  loading: boolean;
+  error: string | null;
+  photos: Photo[];
+  photoById: Map<number, Photo>;
+  mappable: Photo[];
+  regions: Record<string, Region>;
+  total: number;
+};
 
-export function PhotosProvider({ children }) {
-  const [data, setData] = useState(null);
-  const [error, setError] = useState(null);
+const PhotosContext = createContext<PhotosContextValue | null>(null);
+
+export function PhotosProvider({ children }: { children: ReactNode }) {
+  const [data, setData] = useState<PhotosData | null>(null);
+  const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch("/photos.json")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to load photos.json");
-        return res.json();
+        return res.json() as Promise<PhotosData>;
       })
       .then(setData)
-      .catch((err) => setError(err.message))
+      .catch((err: Error) => setError(err.message))
       .finally(() => setLoading(false));
   }, []);
 

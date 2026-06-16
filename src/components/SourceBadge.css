@@ -1,0 +1,50 @@
+.source-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  pointer-events: none;
+  user-select: none;
+}
+
+.source-badge--archive {
+  background: rgba(238, 244, 251, 0.92);
+  border: 1px solid #c5d9f2;
+  color: #3367d6;
+}
+
+.source-badge--community {
+  background: rgba(238, 246, 240, 0.92);
+  border: 1px solid #c5dcc8;
+  color: #2d6a4f;
+}
+
+.photo-card-thumb {
+  position: relative;
+}
+
+.photo-card-thumb .source-badge {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  z-index: 1;
+}
+
+.photo-source-line {
+  margin: 0 0 12px;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: #667788;
+}
+
+.featured-card .source-badge {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 1;
+  font-size: 0.72rem;
+}

@@ -113,7 +113,8 @@ const photos = catalog.map((entry, index) => {
   return {
     id: index + 1,
     slug: entry.slug,
-    src: entry.src,
+    src: entry.src.replace(/^photos\//, "official/"),
+    source: "official",
     regionKey: entry.regionKey,
     region: region.name,
     regionDesc: region.desc,

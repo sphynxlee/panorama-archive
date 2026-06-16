@@ -1,21 +1,19 @@
-import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
+import { useMemo } from "react";
 import { usePhotos } from "../hooks/usePhotos";
 import { usePhotoText } from "../hooks/usePhotoText";
 import { useLanguage } from "../i18n/LanguageProvider";
 import PhotoCard from "../components/PhotoCard";
+import FeaturedPhoto from "../components/FeaturedPhoto";
+import { getFeaturedPhoto } from "../utils/photos";
 import "./GalleryPage.css";
 
 export default function GalleryPage() {
   const { photos, regions, loading, error } = usePhotos();
   const { t } = useLanguage();
   const { regionName } = usePhotoText();
-  const [filter, setFilter] = useState("all");
 
-  const filtered = useMemo(() => {
-    if (filter === "all") return photos;
-    return photos.filter((p) => p.regionKey === filter);
-  }, [photos, filter]);
+  const featured = useMemo(() => getFeaturedPhoto(photos), [photos]);
 
   if (loading) return <div className="page-state">{t("loadingPhotos")}</div>;
   if (error) return <div className="page-state error">{error || t("loadError")}</div>;
@@ -27,36 +25,27 @@ export default function GalleryPage() {
         <p>{t("galleryDesc")}</p>
       </section>
 
+      <FeaturedPhoto photo={featured} />
+
       <aside className="mission-banner">
         <p>{t("galleryMission")}</p>
         <Link to="/about">{t("galleryReadStory")}</Link>
       </aside>
 
       <div className="filter-bar">
-        <button
-          type="button"
-          className={filter === "all" ? "active" : ""}
-          onClick={() => setFilter("all")}
-        >
-          {t("filterAll")} ({photos.length})
-        </button>
+        <span className="filter-label">{t("filterAll")} ({photos.length})</span>
         {Object.entries(regions).map(([key, region]) => {
           const count = photos.filter((p) => p.regionKey === key).length;
           return (
-            <button
-              key={key}
-              type="button"
-              className={filter === key ? "active" : ""}
-              onClick={() => setFilter(key)}
-            >
+            <Link key={key} to={`/region/${key}`} className="filter-link">
               {regionName(region)} ({count})
-            </button>
+            </Link>
           );
         })}
       </div>
 
       <div className="photo-grid">
-        {filtered.map((photo) => (
+        {photos.map((photo) => (
           <PhotoCard key={photo.id} photo={photo} />
         ))}
       </div>

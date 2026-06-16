@@ -1,15 +1,23 @@
 import { encodeSrc } from "./geo";
+import type { Locale } from "../types";
 
 export const SITE_URL = "panorama-archive.vercel.app";
 
-export function getWatermarkText(locale) {
+export function getWatermarkText(locale: Locale): string {
   if (locale === "zh") {
     return `来自 Panorama Archive · ${SITE_URL}`;
   }
   return `From Panorama Archive · ${SITE_URL}`;
 }
 
-function drawRoundedRect(ctx, x, y, width, height, radius) {
+function drawRoundedRect(
+  ctx: CanvasRenderingContext2D,
+  x: number,
+  y: number,
+  width: number,
+  height: number,
+  radius: number
+) {
   ctx.beginPath();
   ctx.moveTo(x + radius, y);
   ctx.lineTo(x + width - radius, y);
@@ -23,7 +31,12 @@ function drawRoundedRect(ctx, x, y, width, height, radius) {
   ctx.closePath();
 }
 
-function drawWatermark(ctx, text, width, height) {
+function drawWatermark(
+  ctx: CanvasRenderingContext2D,
+  text: string,
+  width: number,
+  height: number
+) {
   const padding = Math.max(16, Math.round(width * 0.015));
   const fontSize = Math.max(14, Math.round(width * 0.018));
   ctx.font = `600 ${fontSize}px "Segoe UI", system-ui, -apple-system, sans-serif`;
@@ -45,7 +58,7 @@ function drawWatermark(ctx, text, width, height) {
   ctx.fillText(text, boxX + boxPadX, boxY + boxHeight - boxPadY);
 }
 
-export function loadImage(src) {
+export function loadImage(src: string): Promise<HTMLImageElement> {
   return new Promise((resolve, reject) => {
     const img = new Image();
     img.onload = () => resolve(img);
@@ -54,17 +67,23 @@ export function loadImage(src) {
   });
 }
 
-export async function downloadWatermarkedPhoto(src, filename, watermarkText) {
+export async function downloadWatermarkedPhoto(
+  src: string,
+  filename: string,
+  watermarkText: string
+): Promise<void> {
   const img = await loadImage(src);
   const canvas = document.createElement("canvas");
   canvas.width = img.naturalWidth;
   canvas.height = img.naturalHeight;
 
   const ctx = canvas.getContext("2d");
+  if (!ctx) throw new Error("Canvas not supported");
+
   ctx.drawImage(img, 0, 0);
   drawWatermark(ctx, watermarkText, canvas.width, canvas.height);
 
-  const blob = await new Promise((resolve) => {
+  const blob = await new Promise<Blob | null>((resolve) => {
     canvas.toBlob(resolve, "image/jpeg", 0.92);
   });
 

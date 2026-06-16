@@ -77,6 +77,60 @@
   color: #fff;
 }
 
+.filter-label {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 14px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #1f2d3d;
+}
+
+.filter-link {
+  border: 1px solid #cfd8e3;
+  background: #fff;
+  color: #425466;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 0.84rem;
+  text-decoration: none;
+}
+
+.filter-link:hover {
+  border-color: #4a7fc6;
+  color: #3367d6;
+}
+
+.region-eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #4a7fc6;
+  font-weight: 600;
+}
+
+.region-count {
+  margin-top: 8px !important;
+  font-size: 0.9rem;
+  color: #667788 !important;
+}
+
+.search-back {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.search-back a {
+  color: #3367d6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.search-back a:hover {
+  text-decoration: underline;
+}
+
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));

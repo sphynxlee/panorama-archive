@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
 import { Link } from "react-router-dom";
+import type { Photo } from "../types";
 import { usePhotoText } from "../hooks/usePhotoText";
 import { useLanguage } from "../i18n/LanguageProvider";
 import { encodeSrc } from "../utils/geo";
@@ -18,7 +19,12 @@ const defaultIcon = L.icon({
   shadowSize: [41, 41],
 });
 
-function FitBounds({ photos, activePhoto }) {
+type FitBoundsProps = {
+  photos: Photo[];
+  activePhoto: Photo | null;
+};
+
+function FitBounds({ photos, activePhoto }: FitBoundsProps) {
   const map = useMap();
 
   useEffect(() => {
@@ -29,9 +35,9 @@ function FitBounds({ photos, activePhoto }) {
       return;
     }
 
-    const points = photos
+    const points: [number, number][] = photos
       .filter((p) => p.lat != null && p.lng != null)
-      .map((p) => [p.lat, p.lng]);
+      .map((p) => [p.lat!, p.lng!]);
 
     if (points.length === 0) return;
     if (points.length === 1) {
@@ -44,7 +50,7 @@ function FitBounds({ photos, activePhoto }) {
   return null;
 }
 
-function createThumbIcon(src) {
+function createThumbIcon(src: string) {
   return L.divIcon({
     className: "photo-thumb-marker",
     html: `<img src="${encodeSrc(src)}" alt="" />`,
@@ -54,6 +60,16 @@ function createThumbIcon(src) {
   });
 }
 
+type PhotoMapProps = {
+  photos: Photo[];
+  activePhoto?: Photo | null;
+  height?: number | string;
+  interactive?: boolean;
+  showPopups?: boolean;
+  useThumbnails?: boolean;
+  zoom?: number | null;
+};
+
 export default function PhotoMap({
   photos,
   activePhoto = null,
@@ -62,13 +78,13 @@ export default function PhotoMap({
   showPopups = false,
   useThumbnails = false,
   zoom = null,
-}) {
+}: PhotoMapProps) {
   const { t } = useLanguage();
   const { photoTitle } = usePhotoText();
   const mappable = photos.filter((p) => p.lat != null && p.lng != null);
   const center = activePhoto ?? mappable[0];
 
-  if (!center) {
+  if (!center || center.lat == null || center.lng == null) {
     return <div className="map-empty">{t("noMapData")}</div>;
   }
 
@@ -94,7 +110,7 @@ export default function PhotoMap({
         {mappable.map((photo) => (
           <Marker
             key={photo.id}
-            position={[photo.lat, photo.lng]}
+            position={[photo.lat!, photo.lng!]}
             icon={
               useThumbnails
                 ? createThumbIcon(photo.src)

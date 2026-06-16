@@ -6,6 +6,7 @@ import { useLanguage } from "../i18n/LanguageProvider";
 import { getLocalizedText } from "../i18n/messages";
 import PhotoMap from "../components/PhotoMap";
 import WatermarkedPhoto from "../components/WatermarkedPhoto";
+import { PhotoSourceLine } from "../components/SourceBadge";
 import {
   encodeSrc,
   formatDecimal,
@@ -18,7 +19,7 @@ import { downloadWatermarkedPhoto, getWatermarkText } from "../utils/watermark";
 import "./PhotoDetailPage.css";
 
 export default function PhotoDetailPage() {
-  const { id } = useParams();
+  const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const { photos, photoById, loading, error } = usePhotos();
   const { t, locale } = useLanguage();
@@ -98,6 +99,7 @@ export default function PhotoDetailPage() {
         <aside className="detail-info-panel">
           <div className="info-card">
             <h1>{title}</h1>
+            <PhotoSourceLine photo={photo} />
             {photo.photographerPortrait && (
               <span className="photographer-badge">{t("photoPhotographerBadge")}</span>
             )}

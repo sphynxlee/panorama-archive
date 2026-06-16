@@ -3,3 +3,10 @@ dist
 .DS_Store
 *.local
 .vercel
+
+# Project docs & design (local only — not committed)
+docs/
+figma/
+design/
+*.fig
+figma-exports/

@@ -1,4 +1,5 @@
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet, useNavigate } from "react-router-dom";
+import type { FormEvent } from "react";
 import { usePhotos } from "../hooks/usePhotos";
 import { useLanguage } from "../i18n/LanguageProvider";
 import "./Layout.css";
@@ -6,6 +7,14 @@ import "./Layout.css";
 export default function Layout() {
   const { total, mappable } = usePhotos();
   const { locale, setLocale, t } = useLanguage();
+  const navigate = useNavigate();
+
+  function handleSearch(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const fd = new FormData(e.currentTarget);
+    const q = String(fd.get("q") ?? "").trim();
+    if (q) navigate(`/search?q=${encodeURIComponent(q)}`);
+  }
 
   return (
     <div className="app-shell">
@@ -18,6 +27,15 @@ export default function Layout() {
               <small>{t("brandSubtitle")}</small>
             </span>
           </Link>
+
+          <form className="topbar-search" onSubmit={handleSearch}>
+            <input
+              type="search"
+              name="q"
+              placeholder={t("searchPlaceholder")}
+              aria-label={t("searchTitle")}
+            />
+          </form>
 
           <nav className="nav-links">
             <NavLink to="/" end className={({ isActive }) => (isActive ? "active" : "")}>

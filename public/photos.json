@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T19:53:42.290Z",
+  "generatedAt": "2026-06-16T18:54:59.323Z",
   "total": 79,
   "regions": {
     "northern-shaanxi": {
@@ -73,7 +73,8 @@
     {
       "id": 1,
       "slug": "qiankun-bay-at-sunrise",
-      "src": "photos/northern-shaanxi/qiankun-bay-at-sunrise.jpg",
+      "src": "official/northern-shaanxi/qiankun-bay-at-sunrise.jpg",
+      "source": "official",
       "regionKey": "northern-shaanxi",
       "region": {
         "en": "Northern Shaanxi & Yellow River",
@@ -97,7 +98,8 @@
     {
       "id": 2,
       "slug": "wanjiazhai-reservoir-in-winter",
-      "src": "photos/northern-shaanxi/wanjiazhai-reservoir-in-winter.jpg",
+      "src": "official/northern-shaanxi/wanjiazhai-reservoir-in-winter.jpg",
+      "source": "official",
       "regionKey": "northern-shaanxi",
       "region": {
         "en": "Northern Shaanxi & Yellow River",
@@ -121,7 +123,8 @@
     {
       "id": 3,
       "slug": "laoniu-bay-on-the-yellow-river-in-winter",
-      "src": "photos/northern-shaanxi/laoniu-bay-on-the-yellow-river-in-winter.jpg",
+      "src": "official/northern-shaanxi/laoniu-bay-on-the-yellow-river-in-winter.jpg",
+      "source": "official",
       "regionKey": "northern-shaanxi",
       "region": {
         "en": "Northern Shaanxi & Yellow River",
@@ -145,7 +148,8 @@
     {
       "id": 4,
       "slug": "evening-at-zhunge-er-power-plant",
-      "src": "photos/northern-shaanxi/evening-at-zhunge-er-power-plant.jpg",
+      "src": "official/northern-shaanxi/evening-at-zhunge-er-power-plant.jpg",
+      "source": "official",
       "regionKey": "northern-shaanxi",
       "region": {
         "en": "Northern Shaanxi & Yellow River",
@@ -169,7 +173,8 @@
     {
       "id": 5,
       "slug": "drying-red-dates-in-yanchuan-shaanxi",
-      "src": "photos/northern-shaanxi/drying-red-dates-in-yanchuan-shaanxi.jpg",
+      "src": "official/northern-shaanxi/drying-red-dates-in-yanchuan-shaanxi.jpg",
+      "source": "official",
       "regionKey": "northern-shaanxi",
       "region": {
         "en": "Northern Shaanxi & Yellow River",
@@ -193,7 +198,8 @@
     {
       "id": 6,
       "slug": "river-bend-on-the-lower-wuding-river",
-      "src": "photos/northern-shaanxi/river-bend-on-the-lower-wuding-river.jpg",
+      "src": "official/northern-shaanxi/river-bend-on-the-lower-wuding-river.jpg",
+      "source": "official",
       "regionKey": "northern-shaanxi",
       "region": {
         "en": "Northern Shaanxi & Yellow River",
@@ -217,7 +223,8 @@
     {
       "id": 7,
       "slug": "steep-cliffs-on-the-lower-wuding-river",
-      "src": "photos/northern-shaanxi/steep-cliffs-on-the-lower-wuding-river.jpg",
+      "src": "official/northern-shaanxi/steep-cliffs-on-the-lower-wuding-river.jpg",
+      "source": "official",
       "regionKey": "northern-shaanxi",
       "region": {
         "en": "Northern Shaanxi & Yellow River",
@@ -241,7 +248,8 @@
     {
       "id": 8,
       "slug": "steep-banks-of-the-lower-wuding-river",
-      "src": "photos/northern-shaanxi/steep-banks-of-the-lower-wuding-river.jpg",
+      "src": "official/northern-shaanxi/steep-banks-of-the-lower-wuding-river.jpg",
+      "source": "official",
       "regionKey": "northern-shaanxi",
       "region": {
         "en": "Northern Shaanxi & Yellow River",
@@ -265,7 +273,8 @@
     {
       "id": 9,
       "slug": "meander-landscape-on-the-lower-wuding-river",
-      "src": "photos/northern-shaanxi/meander-landscape-on-the-lower-wuding-river.jpg",
+      "src": "official/northern-shaanxi/meander-landscape-on-the-lower-wuding-river.jpg",
+      "source": "official",
       "regionKey": "northern-shaanxi",
       "region": {
         "en": "Northern Shaanxi & Yellow River",
@@ -289,7 +298,8 @@
     {
       "id": 10,
       "slug": "layered-mountains-at-dawn",
-      "src": "photos/northern-shaanxi/layered-mountains-at-dawn.jpg",
+      "src": "official/northern-shaanxi/layered-mountains-at-dawn.jpg",
+      "source": "official",
       "regionKey": "northern-shaanxi",
       "region": {
         "en": "Northern Shaanxi & Yellow River",
@@ -313,7 +323,8 @@
     {
       "id": 11,
       "slug": "shoe-shaped-sandbar-where-qingjian-river-meets-the-yellow-river",
-      "src": "photos/northern-shaanxi/shoe-shaped-sandbar-where-qingjian-river-meets-the-yellow-river.jpg",
+      "src": "official/northern-shaanxi/shoe-shaped-sandbar-where-qingjian-river-meets-the-yellow-river.jpg",
+      "source": "official",
       "regionKey": "northern-shaanxi",
       "region": {
         "en": "Northern Shaanxi & Yellow River",
@@ -337,7 +348,8 @@
     {
       "id": 12,
       "slug": "earthen-cave-dwellings-in-gaojie-village-qingjian",
-      "src": "photos/northern-shaanxi/earthen-cave-dwellings-in-gaojie-village-qingjian.jpg",
+      "src": "official/northern-shaanxi/earthen-cave-dwellings-in-gaojie-village-qingjian.jpg",
+      "source": "official",
       "regionKey": "northern-shaanxi",
       "region": {
         "en": "Northern Shaanxi & Yellow River",
@@ -361,7 +373,8 @@
     {
       "id": 13,
       "slug": "red-dates-hanging-on-branches-in-northern-shaanxi",
-      "src": "photos/northern-shaanxi/red-dates-hanging-on-branches-in-northern-shaanxi.jpg",
+      "src": "official/northern-shaanxi/red-dates-hanging-on-branches-in-northern-shaanxi.jpg",
+      "source": "official",
       "regionKey": "northern-shaanxi",
       "region": {
         "en": "Northern Shaanxi & Yellow River",
@@ -385,7 +398,8 @@
     {
       "id": 14,
       "slug": "qingjian-river-a-tributary-of-the-yellow-river",
-      "src": "photos/northern-shaanxi/qingjian-river-a-tributary-of-the-yellow-river.jpg",
+      "src": "official/northern-shaanxi/qingjian-river-a-tributary-of-the-yellow-river.jpg",
+      "source": "official",
       "regionKey": "northern-shaanxi",
       "region": {
         "en": "Northern Shaanxi & Yellow River",
@@ -409,7 +423,8 @@
     {
       "id": 15,
       "slug": "qiankun-bay-in-the-jin-shaan-yellow-river-gorge",
-      "src": "photos/northern-shaanxi/qiankun-bay-in-the-jin-shaan-yellow-river-gorge.jpg",
+      "src": "official/northern-shaanxi/qiankun-bay-in-the-jin-shaan-yellow-river-gorge.jpg",
+      "source": "official",
       "regionKey": "northern-shaanxi",
       "region": {
         "en": "Northern Shaanxi & Yellow River",
@@ -438,7 +453,8 @@
     {
       "id": 16,
       "slug": "yellow-river-channel-in-the-jin-shaan-gorge",
-      "src": "photos/northern-shaanxi/yellow-river-channel-in-the-jin-shaan-gorge.jpg",
+      "src": "official/northern-shaanxi/yellow-river-channel-in-the-jin-shaan-gorge.jpg",
+      "source": "official",
       "regionKey": "northern-shaanxi",
       "region": {
         "en": "Northern Shaanxi & Yellow River",
@@ -462,7 +478,8 @@
     {
       "id": 17,
       "slug": "su-ya-bay-meander-in-the-jin-shaan-yellow-river-gorge",
-      "src": "photos/northern-shaanxi/su-ya-bay-meander-in-the-jin-shaan-yellow-river-gorge.jpg",
+      "src": "official/northern-shaanxi/su-ya-bay-meander-in-the-jin-shaan-yellow-river-gorge.jpg",
+      "source": "official",
       "regionKey": "northern-shaanxi",
       "region": {
         "en": "Northern Shaanxi & Yellow River",
@@ -486,7 +503,8 @@
     {
       "id": 18,
       "slug": "approaching-geladandong",
-      "src": "photos/yellow-river-shanxi/approaching-geladandong.jpg",
+      "src": "official/yellow-river-shanxi/approaching-geladandong.jpg",
+      "source": "official",
       "regionKey": "yellow-river-shanxi",
       "region": {
         "en": "Yellow River & Shanxi",
@@ -510,7 +528,8 @@
     {
       "id": 19,
       "slug": "winter-scene-in-luliang-mountains",
-      "src": "photos/yellow-river-shanxi/winter-scene-in-luliang-mountains.jpg",
+      "src": "official/yellow-river-shanxi/winter-scene-in-luliang-mountains.jpg",
+      "source": "official",
       "regionKey": "yellow-river-shanxi",
       "region": {
         "en": "Yellow River & Shanxi",
@@ -534,7 +553,8 @@
     {
       "id": 20,
       "slug": "circular-eddy-at-hukou-waterfall",
-      "src": "photos/yellow-river-shanxi/circular-eddy-at-hukou-waterfall.jpg",
+      "src": "official/yellow-river-shanxi/circular-eddy-at-hukou-waterfall.jpg",
+      "source": "official",
       "regionKey": "yellow-river-shanxi",
       "region": {
         "en": "Yellow River & Shanxi",
@@ -558,7 +578,8 @@
     {
       "id": 21,
       "slug": "qarhan-salt-lake",
-      "src": "photos/yellow-river-shanxi/qarhan-salt-lake.jpg",
+      "src": "official/yellow-river-shanxi/qarhan-salt-lake.jpg",
+      "source": "official",
       "regionKey": "yellow-river-shanxi",
       "region": {
         "en": "Yellow River & Shanxi",
@@ -582,7 +603,8 @@
     {
       "id": 22,
       "slug": "salt-crystals-at-qarhan-salt-lake",
-      "src": "photos/yellow-river-shanxi/salt-crystals-at-qarhan-salt-lake.jpg",
+      "src": "official/yellow-river-shanxi/salt-crystals-at-qarhan-salt-lake.jpg",
+      "source": "official",
       "regionKey": "yellow-river-shanxi",
       "region": {
         "en": "Yellow River & Shanxi",
@@ -606,7 +628,8 @@
     {
       "id": 23,
       "slug": "salt-crystals-at-qarhan-salt-lake-2",
-      "src": "photos/yellow-river-shanxi/salt-crystals-at-qarhan-salt-lake-2.jpg",
+      "src": "official/yellow-river-shanxi/salt-crystals-at-qarhan-salt-lake-2.jpg",
+      "source": "official",
       "regionKey": "yellow-river-shanxi",
       "region": {
         "en": "Yellow River & Shanxi",
@@ -630,7 +653,8 @@
     {
       "id": 24,
       "slug": "salt-crystals-at-qarhan-salt-lake-3",
-      "src": "photos/yellow-river-shanxi/salt-crystals-at-qarhan-salt-lake-3.jpg",
+      "src": "official/yellow-river-shanxi/salt-crystals-at-qarhan-salt-lake-3.jpg",
+      "source": "official",
       "regionKey": "yellow-river-shanxi",
       "region": {
         "en": "Yellow River & Shanxi",
@@ -654,7 +678,8 @@
     {
       "id": 25,
       "slug": "peaks-of-the-kunlun-mountains",
-      "src": "photos/yellow-river-shanxi/peaks-of-the-kunlun-mountains.jpg",
+      "src": "official/yellow-river-shanxi/peaks-of-the-kunlun-mountains.jpg",
+      "source": "official",
       "regionKey": "yellow-river-shanxi",
       "region": {
         "en": "Yellow River & Shanxi",
@@ -678,7 +703,8 @@
     {
       "id": 26,
       "slug": "geladandong-snow-mountain-range",
-      "src": "photos/yellow-river-shanxi/geladandong-snow-mountain-range.jpg",
+      "src": "official/yellow-river-shanxi/geladandong-snow-mountain-range.jpg",
+      "source": "official",
       "regionKey": "yellow-river-shanxi",
       "region": {
         "en": "Yellow River & Shanxi",
@@ -702,7 +728,8 @@
     {
       "id": 27,
       "slug": "chumar-river",
-      "src": "photos/yellow-river-shanxi/chumar-river.jpg",
+      "src": "official/yellow-river-shanxi/chumar-river.jpg",
+      "source": "official",
       "regionKey": "yellow-river-shanxi",
       "region": {
         "en": "Yellow River & Shanxi",
@@ -726,7 +753,8 @@
     {
       "id": 28,
       "slug": "small-temple-at-the-site-of-mao-s-snow-poem",
-      "src": "photos/yellow-river-shanxi/small-temple-at-the-site-of-mao-s-snow-poem.jpg",
+      "src": "official/yellow-river-shanxi/small-temple-at-the-site-of-mao-s-snow-poem.jpg",
+      "source": "official",
       "regionKey": "yellow-river-shanxi",
       "region": {
         "en": "Yellow River & Shanxi",
@@ -750,7 +778,8 @@
     {
       "id": 29,
       "slug": "historic-site-of-mao-s-snow-poem",
-      "src": "photos/yellow-river-shanxi/historic-site-of-mao-s-snow-poem.jpg",
+      "src": "official/yellow-river-shanxi/historic-site-of-mao-s-snow-poem.jpg",
+      "source": "official",
       "regionKey": "yellow-river-shanxi",
       "region": {
         "en": "Yellow River & Shanxi",
@@ -774,7 +803,8 @@
     {
       "id": 30,
       "slug": "chinese-flag-flying-below-mount-everest",
-      "src": "photos/yellow-river-shanxi/chinese-flag-flying-below-mount-everest.jpg",
+      "src": "official/yellow-river-shanxi/chinese-flag-flying-below-mount-everest.jpg",
+      "source": "official",
       "regionKey": "yellow-river-shanxi",
       "region": {
         "en": "Yellow River & Shanxi",
@@ -798,7 +828,8 @@
     {
       "id": 31,
       "slug": "child-of-tibet",
-      "src": "photos/yellow-river-shanxi/child-of-tibet.jpg",
+      "src": "official/yellow-river-shanxi/child-of-tibet.jpg",
+      "source": "official",
       "regionKey": "yellow-river-shanxi",
       "region": {
         "en": "Yellow River & Shanxi",
@@ -822,7 +853,8 @@
     {
       "id": 32,
       "slug": "distant-view-of-geladandong-snow-peak",
-      "src": "photos/yellow-river-shanxi/distant-view-of-geladandong-snow-peak.jpg",
+      "src": "official/yellow-river-shanxi/distant-view-of-geladandong-snow-peak.jpg",
+      "source": "official",
       "regionKey": "yellow-river-shanxi",
       "region": {
         "en": "Yellow River & Shanxi",
@@ -846,7 +878,8 @@
     {
       "id": 33,
       "slug": "distant-view-of-quemo-lake",
-      "src": "photos/yellow-river-shanxi/distant-view-of-quemo-lake.jpg",
+      "src": "official/yellow-river-shanxi/distant-view-of-quemo-lake.jpg",
+      "source": "official",
       "regionKey": "yellow-river-shanxi",
       "region": {
         "en": "Yellow River & Shanxi",
@@ -870,7 +903,8 @@
     {
       "id": 34,
       "slug": "qusu-river-a-source-of-the-yangtze",
-      "src": "photos/yellow-river-shanxi/qusu-river-a-source-of-the-yangtze.jpg",
+      "src": "official/yellow-river-shanxi/qusu-river-a-source-of-the-yangtze.jpg",
+      "source": "official",
       "regionKey": "yellow-river-shanxi",
       "region": {
         "en": "Yellow River & Shanxi",
@@ -894,7 +928,8 @@
     {
       "id": 35,
       "slug": "quemo-lake-and-zuerkenwula-mountain",
-      "src": "photos/yellow-river-shanxi/quemo-lake-and-zuerkenwula-mountain.jpg",
+      "src": "official/yellow-river-shanxi/quemo-lake-and-zuerkenwula-mountain.jpg",
+      "source": "official",
       "regionKey": "yellow-river-shanxi",
       "region": {
         "en": "Yellow River & Shanxi",
@@ -918,7 +953,8 @@
     {
       "id": 36,
       "slug": "red-pond-at-fenghuo-mountain",
-      "src": "photos/yellow-river-shanxi/red-pond-at-fenghuo-mountain.jpg",
+      "src": "official/yellow-river-shanxi/red-pond-at-fenghuo-mountain.jpg",
+      "source": "official",
       "regionKey": "yellow-river-shanxi",
       "region": {
         "en": "Yellow River & Shanxi",
@@ -942,7 +978,8 @@
     {
       "id": 37,
       "slug": "china-snow-town",
-      "src": "photos/western-plateau/china-snow-town.jpg",
+      "src": "official/western-plateau/china-snow-town.jpg",
+      "source": "official",
       "regionKey": "western-plateau",
       "region": {
         "en": "Western Plateau",
@@ -966,7 +1003,8 @@
     {
       "id": 38,
       "slug": "thousand-year-ice-cave",
-      "src": "photos/western-plateau/thousand-year-ice-cave.jpg",
+      "src": "official/western-plateau/thousand-year-ice-cave.jpg",
+      "source": "official",
       "regionKey": "western-plateau",
       "region": {
         "en": "Western Plateau",
@@ -990,7 +1028,8 @@
     {
       "id": 39,
       "slug": "thousand-year-ice-cave-2",
-      "src": "photos/western-plateau/thousand-year-ice-cave-2.jpg",
+      "src": "official/western-plateau/thousand-year-ice-cave-2.jpg",
+      "source": "official",
       "regionKey": "western-plateau",
       "region": {
         "en": "Western Plateau",
@@ -1014,7 +1053,8 @@
     {
       "id": 40,
       "slug": "thousand-year-ice-cave-3",
-      "src": "photos/western-plateau/thousand-year-ice-cave-3.jpg",
+      "src": "official/western-plateau/thousand-year-ice-cave-3.jpg",
+      "source": "official",
       "regionKey": "western-plateau",
       "region": {
         "en": "Western Plateau",
@@ -1038,7 +1078,8 @@
     {
       "id": 41,
       "slug": "approaching-muztagh-ata",
-      "src": "photos/western-plateau/approaching-muztagh-ata.jpg",
+      "src": "official/western-plateau/approaching-muztagh-ata.jpg",
+      "source": "official",
       "regionKey": "western-plateau",
       "region": {
         "en": "Western Plateau",
@@ -1062,7 +1103,8 @@
     {
       "id": 42,
       "slug": "hukou-waterfall-at-1-600-m3-s-flow",
-      "src": "photos/western-plateau/hukou-waterfall-at-1-600-m3-s-flow.jpg",
+      "src": "official/western-plateau/hukou-waterfall-at-1-600-m3-s-flow.jpg",
+      "source": "official",
       "regionKey": "western-plateau",
       "region": {
         "en": "Western Plateau",
@@ -1086,7 +1128,8 @@
     {
       "id": 43,
       "slug": "below-muztagh-ata-peak",
-      "src": "photos/western-plateau/below-muztagh-ata-peak.jpg",
+      "src": "official/western-plateau/below-muztagh-ata-peak.jpg",
+      "source": "official",
       "regionKey": "western-plateau",
       "region": {
         "en": "Western Plateau",
@@ -1110,7 +1153,8 @@
     {
       "id": 44,
       "slug": "yuzhu-peak-kunlun-mountains",
-      "src": "photos/western-plateau/yuzhu-peak-kunlun-mountains.jpg",
+      "src": "official/western-plateau/yuzhu-peak-kunlun-mountains.jpg",
+      "source": "official",
       "regionKey": "western-plateau",
       "region": {
         "en": "Western Plateau",
@@ -1134,7 +1178,8 @@
     {
       "id": 45,
       "slug": "distant-view-of-kongur-tagh-pamir-plateau",
-      "src": "photos/western-plateau/distant-view-of-kongur-tagh-pamir-plateau.jpg",
+      "src": "official/western-plateau/distant-view-of-kongur-tagh-pamir-plateau.jpg",
+      "source": "official",
       "regionKey": "western-plateau",
       "region": {
         "en": "Western Plateau",
@@ -1158,7 +1203,8 @@
     {
       "id": 46,
       "slug": "aerial-view-of-namcha-barwa-range",
-      "src": "photos/western-plateau/aerial-view-of-namcha-barwa-range.jpg",
+      "src": "official/western-plateau/aerial-view-of-namcha-barwa-range.jpg",
+      "source": "official",
       "regionKey": "western-plateau",
       "region": {
         "en": "Western Plateau",
@@ -1182,7 +1228,8 @@
     {
       "id": 47,
       "slug": "wuxuhai-garze-sichuan",
-      "src": "photos/southwest-northeast/wuxuhai-garze-sichuan.jpg",
+      "src": "official/southwest-northeast/wuxuhai-garze-sichuan.jpg",
+      "source": "official",
       "regionKey": "southwest-northeast",
       "region": {
         "en": "Southwest & Northeast",
@@ -1206,7 +1253,8 @@
     {
       "id": 48,
       "slug": "chongsheng-temple-dali",
-      "src": "photos/southwest-northeast/chongsheng-temple-dali.jpg",
+      "src": "official/southwest-northeast/chongsheng-temple-dali.jpg",
+      "source": "official",
       "regionKey": "southwest-northeast",
       "region": {
         "en": "Southwest & Northeast",
@@ -1230,7 +1278,8 @@
     {
       "id": 49,
       "slug": "yangmaiyong-snow-mountain-garze-sichuan",
-      "src": "photos/southwest-northeast/yangmaiyong-snow-mountain-garze-sichuan.jpg",
+      "src": "official/southwest-northeast/yangmaiyong-snow-mountain-garze-sichuan.jpg",
+      "source": "official",
       "regionKey": "southwest-northeast",
       "region": {
         "en": "Southwest & Northeast",
@@ -1254,7 +1303,8 @@
     {
       "id": 50,
       "slug": "wind-and-snow-pavilion-on-zheduo-mountain",
-      "src": "photos/southwest-northeast/wind-and-snow-pavilion-on-zheduo-mountain.jpg",
+      "src": "official/southwest-northeast/wind-and-snow-pavilion-on-zheduo-mountain.jpg",
+      "source": "official",
       "regionKey": "southwest-northeast",
       "region": {
         "en": "Southwest & Northeast",
@@ -1278,7 +1328,8 @@
     {
       "id": 51,
       "slug": "gazing-at-mount-gongga",
-      "src": "photos/southwest-northeast/gazing-at-mount-gongga.jpg",
+      "src": "official/southwest-northeast/gazing-at-mount-gongga.jpg",
+      "source": "official",
       "regionKey": "southwest-northeast",
       "region": {
         "en": "Southwest & Northeast",
@@ -1302,7 +1353,8 @@
     {
       "id": 52,
       "slug": "cooking-smoke-in-snow-town",
-      "src": "photos/southwest-northeast/cooking-smoke-in-snow-town.jpg",
+      "src": "official/southwest-northeast/cooking-smoke-in-snow-town.jpg",
+      "source": "official",
       "regionKey": "southwest-northeast",
       "region": {
         "en": "Southwest & Northeast",
@@ -1326,7 +1378,8 @@
     {
       "id": 53,
       "slug": "street-scene-in-snow-town",
-      "src": "photos/southwest-northeast/street-scene-in-snow-town.jpg",
+      "src": "official/southwest-northeast/street-scene-in-snow-town.jpg",
+      "source": "official",
       "regionKey": "southwest-northeast",
       "region": {
         "en": "Southwest & Northeast",
@@ -1350,7 +1403,8 @@
     {
       "id": 54,
       "slug": "haba-snow-mountain",
-      "src": "photos/yunnan-mountains/haba-snow-mountain.jpg",
+      "src": "official/yunnan-mountains/haba-snow-mountain.jpg",
+      "source": "official",
       "regionKey": "yunnan-mountains",
       "region": {
         "en": "Yunnan Mountains",
@@ -1374,7 +1428,8 @@
     {
       "id": 55,
       "slug": "three-pagodas-of-chongsheng-temple",
-      "src": "photos/yunnan-mountains/three-pagodas-of-chongsheng-temple.jpg",
+      "src": "official/yunnan-mountains/three-pagodas-of-chongsheng-temple.jpg",
+      "source": "official",
       "regionKey": "yunnan-mountains",
       "region": {
         "en": "Yunnan Mountains",
@@ -1398,7 +1453,8 @@
     {
       "id": 56,
       "slug": "five-finger-peak-meili-snow-mountain",
-      "src": "photos/yunnan-mountains/five-finger-peak-meili-snow-mountain.jpg",
+      "src": "official/yunnan-mountains/five-finger-peak-meili-snow-mountain.jpg",
+      "source": "official",
       "regionKey": "yunnan-mountains",
       "region": {
         "en": "Yunnan Mountains",
@@ -1422,7 +1478,8 @@
     {
       "id": 57,
       "slug": "lugu-lake",
-      "src": "photos/yunnan-mountains/lugu-lake.jpg",
+      "src": "official/yunnan-mountains/lugu-lake.jpg",
+      "source": "official",
       "regionKey": "yunnan-mountains",
       "region": {
         "en": "Yunnan Mountains",
@@ -1446,7 +1503,8 @@
     {
       "id": 58,
       "slug": "lugu-lake-2",
-      "src": "photos/yunnan-mountains/lugu-lake-2.jpg",
+      "src": "official/yunnan-mountains/lugu-lake-2.jpg",
+      "source": "official",
       "regionKey": "yunnan-mountains",
       "region": {
         "en": "Yunnan Mountains",
@@ -1470,7 +1528,8 @@
     {
       "id": 59,
       "slug": "haizi-mountain-garze-sichuan",
-      "src": "photos/yunnan-mountains/haizi-mountain-garze-sichuan.jpg",
+      "src": "official/yunnan-mountains/haizi-mountain-garze-sichuan.jpg",
+      "source": "official",
       "regionKey": "yunnan-mountains",
       "region": {
         "en": "Yunnan Mountains",
@@ -1494,7 +1553,8 @@
     {
       "id": 60,
       "slug": "haizi-mountain-garze-sichuan-2",
-      "src": "photos/yunnan-mountains/haizi-mountain-garze-sichuan-2.jpg",
+      "src": "official/yunnan-mountains/haizi-mountain-garze-sichuan-2.jpg",
+      "source": "official",
       "regionKey": "yunnan-mountains",
       "region": {
         "en": "Yunnan Mountains",
@@ -1518,7 +1578,8 @@
     {
       "id": 61,
       "slug": "white-pagoda-deqin-yunnan",
-      "src": "photos/yunnan-mountains/white-pagoda-deqin-yunnan.jpg",
+      "src": "official/yunnan-mountains/white-pagoda-deqin-yunnan.jpg",
+      "source": "official",
       "regionKey": "yunnan-mountains",
       "region": {
         "en": "Yunnan Mountains",
@@ -1542,7 +1603,8 @@
     {
       "id": 62,
       "slug": "snow-capped-peaks-through-the-window-deqin-yunnan",
-      "src": "photos/yunnan-mountains/snow-capped-peaks-through-the-window-deqin-yunnan.jpg",
+      "src": "official/yunnan-mountains/snow-capped-peaks-through-the-window-deqin-yunnan.jpg",
+      "source": "official",
       "regionKey": "yunnan-mountains",
       "region": {
         "en": "Yunnan Mountains",
@@ -1566,7 +1628,8 @@
     {
       "id": 63,
       "slug": "napa-lake-deqin-yunnan",
-      "src": "photos/yunnan-mountains/napa-lake-deqin-yunnan.jpg",
+      "src": "official/yunnan-mountains/napa-lake-deqin-yunnan.jpg",
+      "source": "official",
       "regionKey": "yunnan-mountains",
       "region": {
         "en": "Yunnan Mountains",
@@ -1590,7 +1653,8 @@
     {
       "id": 64,
       "slug": "napa-lake-deqin-yunnan-2",
-      "src": "photos/yunnan-mountains/napa-lake-deqin-yunnan-2.jpg",
+      "src": "official/yunnan-mountains/napa-lake-deqin-yunnan-2.jpg",
+      "source": "official",
       "regionKey": "yunnan-mountains",
       "region": {
         "en": "Yunnan Mountains",
@@ -1614,7 +1678,8 @@
     {
       "id": 65,
       "slug": "gazing-at-mount-gongga-2",
-      "src": "photos/yunnan-mountains/gazing-at-mount-gongga-2.jpg",
+      "src": "official/yunnan-mountains/gazing-at-mount-gongga-2.jpg",
+      "source": "official",
       "regionKey": "yunnan-mountains",
       "region": {
         "en": "Yunnan Mountains",
@@ -1638,7 +1703,8 @@
     {
       "id": 66,
       "slug": "gazing-at-mount-gongga-3",
-      "src": "photos/yunnan-mountains/gazing-at-mount-gongga-3.jpg",
+      "src": "official/yunnan-mountains/gazing-at-mount-gongga-3.jpg",
+      "source": "official",
       "regionKey": "yunnan-mountains",
       "region": {
         "en": "Yunnan Mountains",
@@ -1662,7 +1728,8 @@
     {
       "id": 67,
       "slug": "heishi-city-garze-sichuan",
-      "src": "photos/yunnan-mountains/heishi-city-garze-sichuan.jpg",
+      "src": "official/yunnan-mountains/heishi-city-garze-sichuan.jpg",
+      "source": "official",
       "regionKey": "yunnan-mountains",
       "region": {
         "en": "Yunnan Mountains",
@@ -1686,7 +1753,8 @@
     {
       "id": 68,
       "slug": "kanbula-danxia-landform",
-      "src": "photos/qinghai/kanbula-danxia-landform.jpg",
+      "src": "official/qinghai/kanbula-danxia-landform.jpg",
+      "source": "official",
       "regionKey": "qinghai",
       "region": {
         "en": "Qinghai",
@@ -1710,7 +1778,8 @@
     {
       "id": 69,
       "slug": "kanbula-at-dawn",
-      "src": "photos/qinghai/kanbula-at-dawn.jpg",
+      "src": "official/qinghai/kanbula-at-dawn.jpg",
+      "source": "official",
       "regionKey": "qinghai",
       "region": {
         "en": "Qinghai",
@@ -1734,7 +1803,8 @@
     {
       "id": 70,
       "slug": "xiaqiong-temple",
-      "src": "photos/qinghai/xiaqiong-temple.jpg",
+      "src": "official/qinghai/xiaqiong-temple.jpg",
+      "source": "official",
       "regionKey": "qinghai",
       "region": {
         "en": "Qinghai",
@@ -1758,7 +1828,8 @@
     {
       "id": 71,
       "slug": "three-pagodas-of-chongsheng-temple-2",
-      "src": "photos/qinghai/three-pagodas-of-chongsheng-temple-2.jpg",
+      "src": "official/qinghai/three-pagodas-of-chongsheng-temple-2.jpg",
+      "source": "official",
       "regionKey": "qinghai",
       "region": {
         "en": "Qinghai",
@@ -1782,7 +1853,8 @@
     {
       "id": 72,
       "slug": "lijiaxia-gorge",
-      "src": "photos/qinghai/lijiaxia-gorge.jpg",
+      "src": "official/qinghai/lijiaxia-gorge.jpg",
+      "source": "official",
       "regionKey": "qinghai",
       "region": {
         "en": "Qinghai",
@@ -1806,7 +1878,8 @@
     {
       "id": 73,
       "slug": "below-lijiaxia-dam",
-      "src": "photos/qinghai/below-lijiaxia-dam.jpg",
+      "src": "official/qinghai/below-lijiaxia-dam.jpg",
+      "source": "official",
       "regionKey": "qinghai",
       "region": {
         "en": "Qinghai",
@@ -1830,7 +1903,8 @@
     {
       "id": 74,
       "slug": "below-lijiaxia-dam-2",
-      "src": "photos/qinghai/below-lijiaxia-dam-2.jpg",
+      "src": "official/qinghai/below-lijiaxia-dam-2.jpg",
+      "source": "official",
       "regionKey": "qinghai",
       "region": {
         "en": "Qinghai",
@@ -1854,7 +1928,8 @@
     {
       "id": 75,
       "slug": "qilian-pasture",
-      "src": "photos/qinghai/qilian-pasture.jpg",
+      "src": "official/qinghai/qilian-pasture.jpg",
+      "source": "official",
       "regionKey": "qinghai",
       "region": {
         "en": "Qinghai",
@@ -1878,7 +1953,8 @@
     {
       "id": 76,
       "slug": "qilian-pasture-2",
-      "src": "photos/qinghai/qilian-pasture-2.jpg",
+      "src": "official/qinghai/qilian-pasture-2.jpg",
+      "source": "official",
       "regionKey": "qinghai",
       "region": {
         "en": "Qinghai",
@@ -1902,7 +1978,8 @@
     {
       "id": 77,
       "slug": "qilian-pasture-3",
-      "src": "photos/qinghai/qilian-pasture-3.jpg",
+      "src": "official/qinghai/qilian-pasture-3.jpg",
+      "source": "official",
       "regionKey": "qinghai",
       "region": {
         "en": "Qinghai",
@@ -1926,7 +2003,8 @@
     {
       "id": 78,
       "slug": "upper-reaches-of-the-heihe-river-qilian",
-      "src": "photos/qinghai/upper-reaches-of-the-heihe-river-qilian.jpg",
+      "src": "official/qinghai/upper-reaches-of-the-heihe-river-qilian.jpg",
+      "source": "official",
       "regionKey": "qinghai",
       "region": {
         "en": "Qinghai",
@@ -1950,7 +2028,8 @@
     {
       "id": 79,
       "slug": "sunset-on-the-upper-heihe-river-qilian",
-      "src": "photos/qinghai/sunset-on-the-upper-heihe-river-qilian.jpg",
+      "src": "official/qinghai/sunset-on-the-upper-heihe-river-qilian.jpg",
+      "source": "official",
       "regionKey": "qinghai",
       "region": {
         "en": "Qinghai",
