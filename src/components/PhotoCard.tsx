@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import type { Photo, PhotoSource } from "../types";
 import { usePhotoText } from "../hooks/usePhotoText";
 import { useLanguage } from "../i18n/LanguageProvider";
-import { encodeSrc, formatDms } from "../utils/geo";
+import { encodeSrc, formatDecimal } from "../utils/geo";
 import SourceBadge from "./SourceBadge";
 import "./PhotoCard.css";
 
@@ -24,8 +24,8 @@ export default function PhotoCard({ photo }: PhotoCardProps) {
       <div className="photo-card-body">
         <h3>{title}</h3>
         <p>{photoRegion(photo)}</p>
-        {photo.coords && (
-          <span className="coords">{formatDms(photo.coords, locale)}</span>
+        {photo.lat != null && photo.lng != null && (
+          <span className="coords">{formatDecimal(photo.lat, photo.lng, locale)}</span>
         )}
       </div>
     </Link>

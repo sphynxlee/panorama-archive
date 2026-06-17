@@ -3,34 +3,81 @@
 }
 
 .detail-toolbar {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   margin-bottom: 16px;
 }
 
-.detail-toolbar button,
-.detail-nav .nav-link {
+.toolbar-back {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #cfd8e3;
   background: #fff;
   color: #3367d6;
-  padding: 7px 12px;
-  border-radius: 4px;
-  text-decoration: none;
+  padding: 7px 16px;
+  border-radius: 999px;
   font-size: 0.86rem;
+  font-weight: 600;
+  white-space: nowrap;
   cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.toolbar-back:hover {
+  border-color: #4a7fc6;
+  background: #f5f8fc;
+}
+
+.detail-toolbar .counter {
+  justify-self: center;
+  color: #667788;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 .detail-nav {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  justify-self: end;
+  display: inline-flex;
+  align-items: stretch;
+  border: 1px solid #cfd8e3;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #fff;
 }
 
-.detail-nav .counter {
-  color: #667788;
-  font-size: 0.84rem;
+.nav-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  padding: 6px 14px;
+  color: #3367d6;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.nav-arrow:first-child {
+  border-right: 1px solid #e3e8ef;
+}
+
+.nav-arrow:hover {
+  background: #f5f8fc;
+}
+
+.nav-arrow.disabled {
+  color: #c2ccd6;
+  cursor: default;
+  pointer-events: none;
 }
 
 .detail-layout {
@@ -54,28 +101,49 @@
   background: #0f1419;
 }
 
-.download-btn {
+.detail-photo-trigger {
   display: block;
   width: 100%;
-  margin: 14px 0 4px;
-  padding: 10px 14px;
-  border: 1px solid #4a7fc6;
-  border-radius: 4px;
-  background: #4a7fc6;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  position: relative;
+  cursor: zoom-in;
+}
+
+.detail-photo-trigger .detail-watermarked-photo img {
+  transition: filter 0.25s ease;
+}
+
+.detail-photo-trigger:hover .detail-watermarked-photo img,
+.detail-photo-trigger:focus-visible .detail-watermarked-photo img {
+  filter: brightness(0.9);
+}
+
+.detail-zoom-hint {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
   color: #fff;
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
+  line-height: 1;
+  pointer-events: none;
+  backdrop-filter: blur(2px);
+  opacity: 0.9;
+  transition: opacity 0.2s ease, background 0.2s ease;
 }
 
-.download-btn:hover:not(:disabled) {
-  background: #3d72b8;
-  border-color: #3d72b8;
-}
-
-.download-btn:disabled {
-  opacity: 0.7;
-  cursor: wait;
+.detail-photo-trigger:hover .detail-zoom-hint,
+.detail-photo-trigger:focus-visible .detail-zoom-hint {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.72);
 }
 
 .detail-info-panel {
@@ -182,6 +250,44 @@
   word-break: break-word;
 }
 
+.map-preview-link {
+  position: relative;
+  display: block;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* The detail map is a preview: clicks should open the full map page, not pan. */
+.map-preview-link .photo-map-container {
+  pointer-events: none;
+}
+
+.map-expand-hint {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #cfd8e3;
+  color: #3367d6;
+  box-shadow: 0 1px 4px rgba(35, 55, 80, 0.18);
+  pointer-events: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.map-preview-link:hover .map-expand-hint,
+.map-preview-link:focus-visible .map-expand-hint {
+  background: #3367d6;
+  color: #fff;
+}
+
 .map-links {
   display: flex;
   flex-direction: column;
@@ -259,15 +365,6 @@
 }
 
 @media (max-width: 640px) {
-  .detail-toolbar {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .detail-nav {
-    justify-content: space-between;
-  }
-
   .detail-watermarked-photo img {
     max-height: min(70vh, 520px);
   }

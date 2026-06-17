@@ -1,3 +1,4 @@
+import { useSearchParams } from "react-router-dom";
 import { usePhotos } from "../hooks/usePhotos";
 import { useLanguage } from "../i18n/LanguageProvider";
 import PhotoMap from "../components/PhotoMap";
@@ -8,6 +9,10 @@ import "./MapPage.css";
 export default function MapPage() {
   const { mappable, loading, error } = usePhotos();
   const { t } = useLanguage();
+  const [searchParams] = useSearchParams();
+
+  const focusId = Number(searchParams.get("focus"));
+  const focusPhoto = mappable.find((p) => p.id === focusId) ?? null;
 
   useScrollToTopWhenReady(!loading);
 
@@ -37,11 +42,11 @@ export default function MapPage() {
         <div className="map-page-canvas">
           <PhotoMap
             photos={mappable}
+            activePhoto={focusPhoto}
             height="100%"
             showPopups
-            useThumbnails
             showControls
-            zoom={5}
+            zoom={focusPhoto ? 13 : 5}
           />
         </div>
       </div>

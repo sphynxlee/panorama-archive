@@ -6,18 +6,16 @@ import { useLanguage } from "../i18n/LanguageProvider";
 import { getLocalizedText } from "../i18n/messages";
 import PhotoMap from "../components/PhotoMap";
 import WatermarkedPhoto from "../components/WatermarkedPhoto";
+import PhotoLightbox from "../components/PhotoLightbox";
 import { PhotoSourceLine } from "../components/SourceBadge";
 import PageShell from "../components/PageShell";
 import { useScrollToTopWhenReady } from "../hooks/useScrollToTopWhenReady";
 import {
   encodeSrc,
-  formatDecimal,
-  formatDms,
   getNearbyPhotos,
   googleMapsUrl,
   osmUrl,
 } from "../utils/geo";
-import { downloadWatermarkedPhoto, getWatermarkText } from "../utils/watermark";
 import "./PhotoDetailPage.css";
 
 export default function PhotoDetailPage() {
@@ -26,7 +24,7 @@ export default function PhotoDetailPage() {
   const { photos, photoById, loading, error } = usePhotos();
   const { t, locale } = useLanguage();
   const { photoTitle, photoRegion, photoRegionDesc } = usePhotoText();
-  const [downloading, setDownloading] = useState(false);
+  const [viewerOpen, setViewerOpen] = useState(false);
 
   const photoId = Number(id);
   const photo = photoById.get(photoId);
@@ -37,22 +35,6 @@ export default function PhotoDetailPage() {
   const title = photo ? photoTitle(photo) : "";
 
   useScrollToTopWhenReady(!loading);
-
-  async function handleDownload() {
-    if (!photo || downloading) return;
-    setDownloading(true);
-    try {
-      await downloadWatermarkedPhoto(
-        photo.src,
-        `${photo.slug}.jpg`,
-        getWatermarkText(locale)
-      );
-    } catch {
-      window.alert(t("downloadFailed"));
-    } finally {
-      setDownloading(false);
-    }
-  }
 
   if (loading) {
     return (
@@ -83,33 +65,66 @@ export default function PhotoDetailPage() {
   return (
     <PageShell cardClassName="detail-page-card">
       <div className="detail-toolbar">
-        <button type="button" onClick={() => navigate(-1)}>
+        <button type="button" className="toolbar-back" onClick={() => navigate(-1)}>
           {t("back")}
         </button>
+        <span className="counter">
+          {index + 1} / {photos.length}
+        </span>
         <div className="detail-nav">
-          {prev && (
-            <Link to={`/photo/${prev.id}`} className="nav-link">
-              {t("previous")}
+          {prev ? (
+            <Link to={`/photo/${prev.id}`} className="nav-arrow" aria-label={t("previous")}>
+              ‹
             </Link>
+          ) : (
+            <span className="nav-arrow disabled" aria-hidden="true">
+              ‹
+            </span>
           )}
-          <span className="counter">
-            {index + 1} / {photos.length}
-          </span>
-          {next && (
-            <Link to={`/photo/${next.id}`} className="nav-link">
-              {t("next")}
+          {next ? (
+            <Link to={`/photo/${next.id}`} className="nav-arrow" aria-label={t("next")}>
+              ›
             </Link>
+          ) : (
+            <span className="nav-arrow disabled" aria-hidden="true">
+              ›
+            </span>
           )}
         </div>
       </div>
 
       <div className="detail-layout">
         <section className="detail-photo-panel">
-          <WatermarkedPhoto
-            src={photo.src}
-            alt={title}
-            className="detail-watermarked-photo"
-          />
+          <button
+            type="button"
+            className="detail-photo-trigger"
+            onClick={() => setViewerOpen(true)}
+            aria-label={t("photoZoomHint")}
+          >
+            <WatermarkedPhoto
+              src={photo.src}
+              alt={title}
+              className="detail-watermarked-photo"
+            />
+            <span className="detail-zoom-hint">
+              <svg
+                viewBox="0 0 24 24"
+                width="14"
+                height="14"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="11" cy="11" r="7" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg>
+            </span>
+          </button>
         </section>
 
         <aside className="detail-info-panel">
@@ -122,15 +137,6 @@ export default function PhotoDetailPage() {
             <p className="region">{photoRegion(photo)}</p>
             <p className="region-desc">{photoRegionDesc(photo)}</p>
 
-            <button
-              type="button"
-              className="download-btn"
-              onClick={handleDownload}
-              disabled={downloading}
-            >
-              {downloading ? t("downloadingPhoto") : t("downloadPhoto")}
-            </button>
-
             {photo.annotation && (
               <div className="photo-annotation">
                 <h2>{t("photoAnnotationLabel")}</h2>
@@ -140,32 +146,18 @@ export default function PhotoDetailPage() {
 
             <div className="location-block">
               <h2>{t("location")}</h2>
-              <dl>
-                <div>
-                  <dt>{t("coordsDms")}</dt>
-                  <dd>{formatDms(photo.coords, locale)}</dd>
-                </div>
-                {photo.lat != null && photo.lng != null && (
-                  <>
-                    <div>
-                      <dt>{t("coordsDecimal")}</dt>
-                      <dd>{formatDecimal(photo.lat, photo.lng, locale)}</dd>
-                    </div>
-                    <div>
-                      <dt>{t("latitude")}</dt>
-                      <dd>
-                        {photo.lat.toFixed(6)}° {t("north")}
-                      </dd>
-                    </div>
-                    <div>
-                      <dt>{t("longitude")}</dt>
-                      <dd>
-                        {photo.lng.toFixed(6)}° {t("east")}
-                      </dd>
-                    </div>
-                  </>
-                )}
-              </dl>
+              {photo.lat != null && photo.lng != null && (
+                <dl>
+                  <div>
+                    <dt>
+                      {t("latitude")}, {t("longitude")}
+                    </dt>
+                    <dd>
+                      {photo.lat.toFixed(6)}, {photo.lng.toFixed(6)}
+                    </dd>
+                  </div>
+                </dl>
+              )}
 
               {photo.lat != null && photo.lng != null && (
                 <div className="map-links">
@@ -181,7 +173,36 @@ export default function PhotoDetailPage() {
 
             <div className="map-block">
               <h2>{t("map")}</h2>
-              <PhotoMap photos={[photo]} activePhoto={photo} height={240} zoom={10} />
+              <Link
+                to={`/map?focus=${photo.id}`}
+                className="map-preview-link"
+                aria-label={t("mapOpenFull")}
+              >
+                <PhotoMap
+                  photos={[photo]}
+                  activePhoto={photo}
+                  height={240}
+                  zoom={10}
+                  interactive={false}
+                />
+                <span className="map-expand-hint" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <polyline points="15 3 21 3 21 9" />
+                    <polyline points="9 21 3 21 3 15" />
+                    <line x1="21" y1="3" x2="14" y2="10" />
+                    <line x1="3" y1="21" x2="10" y2="14" />
+                  </svg>
+                </span>
+              </Link>
             </div>
           </div>
         </aside>
@@ -202,6 +223,10 @@ export default function PhotoDetailPage() {
             ))}
           </div>
         </section>
+      )}
+
+      {viewerOpen && (
+        <PhotoLightbox src={photo.src} alt={title} onClose={() => setViewerOpen(false)} />
       )}
     </PageShell>
   );

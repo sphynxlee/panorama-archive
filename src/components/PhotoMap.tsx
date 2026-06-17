@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   Circle,
   CircleMarker,
@@ -7,6 +7,7 @@ import {
   Popup,
   TileLayer,
   useMap,
+  useMapEvents,
 } from "react-leaflet";
 import L from "leaflet";
 import { Link } from "react-router-dom";
@@ -23,27 +24,18 @@ import {
 import "leaflet/dist/leaflet.css";
 import "./PhotoMap.css";
 
-const defaultIcon = L.icon({
-  iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
-  iconRetinaUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
-  shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41],
-});
-
 type FitBoundsProps = {
   photos: Photo[];
   activePhoto: Photo | null;
+  focusZoom: number;
 };
 
-function FitBounds({ photos, activePhoto }: FitBoundsProps) {
+function FitBounds({ photos, activePhoto, focusZoom }: FitBoundsProps) {
   const map = useMap();
 
   useEffect(() => {
     if (activePhoto?.lat != null && activePhoto?.lng != null) {
-      map.setView([activePhoto.lat, activePhoto.lng], activePhoto ? 11 : map.getZoom(), {
+      map.setView([activePhoto.lat, activePhoto.lng], focusZoom, {
         animate: true,
       });
       return;
@@ -59,8 +51,15 @@ function FitBounds({ photos, activePhoto }: FitBoundsProps) {
       return;
     }
     map.fitBounds(L.latLngBounds(points), { padding: [40, 40] });
-  }, [map, photos, activePhoto]);
+  }, [map, photos, activePhoto, focusZoom]);
 
+  return null;
+}
+
+function MapClickHandler({ onClear }: { onClear: () => void }) {
+  useMapEvents({
+    click: () => onClear(),
+  });
   return null;
 }
 
@@ -145,9 +144,18 @@ function MapToolControls({ onUserLocation, hasUserLocation }: MapToolControlsPro
   const map = useMap();
   const { t } = useLanguage();
   const [locating, setLocating] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // Keep clicks on the controls from bubbling to the map (which would otherwise
+  // clear the photo focus / popup and re-trigger map interactions).
+  useEffect(() => {
+    if (!containerRef.current) return;
+    L.DomEvent.disableClickPropagation(containerRef.current);
+    L.DomEvent.disableScrollPropagation(containerRef.current);
+  }, []);
 
   function handleLocate() {
-    if (!navigator.geolocation) {
+    if (!navigator.geolocation || !window.isSecureContext) {
       window.alert(t("mapLocateUnavailable"));
       return;
     }
@@ -160,8 +168,12 @@ function MapToolControls({ onUserLocation, hasUserLocation }: MapToolControlsPro
         onUserLocation({ lat: latitude, lng: longitude, accuracy });
         setLocating(false);
       },
-      () => {
-        window.alert(t("mapLocateDenied"));
+      (err) => {
+        window.alert(
+          err.code === err.PERMISSION_DENIED
+            ? t("mapLocateDenied")
+            : t("mapLocateUnavailable")
+        );
         onUserLocation(null);
         setLocating(false);
       },
@@ -172,7 +184,7 @@ function MapToolControls({ onUserLocation, hasUserLocation }: MapToolControlsPro
   const locateActive = locating || hasUserLocation;
 
   return (
-    <div className="map-tool-controls">
+    <div className="map-tool-controls" ref={containerRef}>
       <button
         type="button"
         className={`map-tool-circle${locateActive ? " is-active" : ""}`}
@@ -218,13 +230,14 @@ function MapToolControls({ onUserLocation, hasUserLocation }: MapToolControlsPro
   );
 }
 
-function createThumbIcon(src: string) {
+function createThumbIcon(src: string, active = false) {
+  const size = active ? 66 : 52;
   return L.divIcon({
-    className: "photo-thumb-marker",
+    className: `photo-thumb-marker${active ? " is-active" : ""}`,
     html: `<img src="${encodeSrc(src)}" alt="" />`,
-    iconSize: [52, 52],
-    iconAnchor: [26, 26],
-    popupAnchor: [0, -28],
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+    popupAnchor: [0, -(size / 2 + 2)],
   });
 }
 
@@ -234,7 +247,6 @@ type PhotoMapProps = {
   height?: number | string;
   interactive?: boolean;
   showPopups?: boolean;
-  useThumbnails?: boolean;
   zoom?: number | null;
   showControls?: boolean;
 };
@@ -245,7 +257,6 @@ export default function PhotoMap({
   height = 320,
   interactive = true,
   showPopups = false,
-  useThumbnails = false,
   zoom = null,
   showControls = false,
 }: PhotoMapProps) {
@@ -253,9 +264,24 @@ export default function PhotoMap({
   const { photoTitle } = usePhotoText();
   const [mapStyle, setMapStyle] = useState<MapTileStyle>("street");
   const [userLocation, setUserLocation] = useState<UserLocation | null>(null);
+  const [focusedId, setFocusedId] = useState<number | null>(activePhoto?.id ?? null);
+  const markerRefs = useRef(new Map<number, L.Marker>());
   const mappable = photos.filter((p) => p.lat != null && p.lng != null);
   const center = activePhoto ?? mappable[0];
   const tiles = MAP_TILE_LAYERS[mapStyle];
+
+  useEffect(() => {
+    setFocusedId(activePhoto?.id ?? null);
+  }, [activePhoto]);
+
+  useEffect(() => {
+    if (!showPopups || focusedId == null) return;
+    // Defer so the marker and its bound popup are fully mounted before opening.
+    const timer = window.setTimeout(() => {
+      markerRefs.current.get(focusedId)?.openPopup();
+    }, 200);
+    return () => window.clearTimeout(timer);
+  }, [focusedId, showPopups, mappable.length]);
 
   if (!center || center.lat == null || center.lng == null) {
     return <div className="map-empty">{t("noMapData")}</div>;
@@ -280,8 +306,9 @@ export default function PhotoMap({
         className="photo-map-container"
       >
         <DisableMapRotation />
+        {showPopups && <MapClickHandler onClear={() => setFocusedId(null)} />}
         <TileLayer key={mapStyle} attribution={tiles.attribution} url={tiles.url} />
-        <FitBounds photos={mappable} activePhoto={activePhoto} />
+        <FitBounds photos={mappable} activePhoto={activePhoto} focusZoom={mapZoom} />
 
         {showControls && (
           <>
@@ -322,18 +349,21 @@ export default function PhotoMap({
           <Marker
             key={photo.id}
             position={[photo.lat!, photo.lng!]}
-            icon={
-              useThumbnails
-                ? createThumbIcon(photo.src)
-                : photo.id === activePhoto?.id
-                  ? defaultIcon
-                  : createThumbIcon(photo.src)
-            }
+            icon={createThumbIcon(photo.src, photo.id === focusedId)}
+            ref={(marker) => {
+              if (marker) markerRefs.current.set(photo.id, marker);
+              else markerRefs.current.delete(photo.id);
+            }}
+            eventHandlers={{
+              click: () => setFocusedId(photo.id),
+            }}
           >
             {showPopups && (
               <Popup>
                 <div className="map-popup">
-                  <img src={encodeSrc(photo.src)} alt={photoTitle(photo)} />
+                  <Link to={`/photo/${photo.id}`} className="map-popup-image">
+                    <img src={encodeSrc(photo.src)} alt={photoTitle(photo)} />
+                  </Link>
                   <strong>{photoTitle(photo)}</strong>
                   <Link to={`/photo/${photo.id}`}>{t("viewPhoto")}</Link>
                 </div>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import type { Photo } from "../types";
 import { usePhotoText } from "../hooks/usePhotoText";
 import { useLanguage } from "../i18n/LanguageProvider";
-import { encodeSrc, formatDms } from "../utils/geo";
+import { encodeSrc, formatDecimal } from "../utils/geo";
 import { getFeaturedPhoto, pickRandomFeaturedPhoto } from "../utils/photos";
 import SourceBadge from "./SourceBadge";
 import "./FeaturedPhoto.css";
@@ -45,13 +45,17 @@ export default function FeaturedPhoto({ photos }: FeaturedPhotoProps) {
       </div>
 
       <Link to={`/photo/${featured.id}`} className="featured-card">
-        <img src={encodeSrc(featured.src)} alt={title} loading="eager" />
-        <SourceBadge source={featured.source ?? "official"} />
+        <div className="featured-media">
+          <img src={encodeSrc(featured.src)} alt={title} loading="eager" />
+          <SourceBadge source={featured.source ?? "official"} />
+        </div>
         <div className="featured-overlay">
           <strong>{title}</strong>
           <span>{photoRegion(featured)}</span>
-          {featured.coords && (
-            <span className="featured-coords">{formatDms(featured.coords, locale)}</span>
+          {featured.lat != null && featured.lng != null && (
+            <span className="featured-coords">
+              {formatDecimal(featured.lat, featured.lng, locale)}
+            </span>
           )}
           <em>{t("featuredCta")}</em>
         </div>
