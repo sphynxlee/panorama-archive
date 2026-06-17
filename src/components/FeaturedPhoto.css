@@ -57,14 +57,64 @@
    stays anchored to the photo while the caption sits below it. */
 .featured-media {
   position: relative;
+  overflow: hidden;
+  background: #e9eef3;
+}
+
+.featured-media:not(.is-loaded) {
+  min-height: 360px;
+}
+
+.featured-media::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, #e6ebf1 25%, #f2f5f8 50%, #e6ebf1 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
+}
+
+.featured-media.is-loaded::before {
+  display: none;
+}
+
+.featured-media:not(.is-loaded) .source-badge {
+  display: none;
 }
 
 .featured-card img {
+  position: relative;
+  z-index: 1;
   display: block;
   width: 100%;
   max-height: 420px;
   object-fit: cover;
   background: #0f1419;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.featured-media.is-loaded img {
+  opacity: 1;
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .featured-media::before {
+    animation: none;
+  }
+
+  .featured-card img {
+    transition: none;
+  }
 }
 
 .featured-overlay {
@@ -113,6 +163,10 @@
 
   .featured-section h2 {
     font-size: 1.375rem;
+  }
+
+  .featured-media:not(.is-loaded) {
+    min-height: 240px;
   }
 
   .featured-card img {

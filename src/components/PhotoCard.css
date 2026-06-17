@@ -14,12 +14,63 @@
   transform: translateY(-2px);
 }
 
+.photo-card-thumb {
+  position: relative;
+  overflow: hidden;
+  background: #e9eef3;
+}
+
+/* Shimmering skeleton shown until the image finishes loading. */
+.photo-card-thumb::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, #e6ebf1 25%, #f2f5f8 50%, #e6ebf1 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
+}
+
+.photo-card-thumb.is-loaded::before {
+  display: none;
+}
+
+.photo-card-thumb:not(.is-loaded) .source-badge {
+  display: none;
+}
+
 .photo-card img {
+  position: relative;
+  z-index: 1;
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
   display: block;
   background: #e9eef3;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.photo-card-thumb.is-loaded img {
+  opacity: 1;
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-card-thumb::before {
+    animation: none;
+  }
+
+  .photo-card img {
+    transition: none;
+  }
 }
 
 .photo-card-body {
